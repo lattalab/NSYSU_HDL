@@ -1,0 +1,75 @@
+ 
+****************************************
+Report : area
+Design : adder_structure
+Version: V-2023.12
+Date   : Thu Oct  3 14:48:25 2024
+****************************************
+
+Library(s) Used:
+
+    N16ADFP_StdCellss0p72vm40c_ccs (File: /cad/CBDK/ADFP/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.db)
+
+Number of ports:                          258
+Number of nets:                           440
+Number of cells:                          247
+Number of combinational cells:            215
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                        114
+Number of references:                      32
+
+Combinational area:                 92.482562
+Buf/Inv area:                       29.289601
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                    92.482562
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+adder_structure                     92.4826    100.0    0.0000     0.0000  0.0000  adder_structure
+generate_block_0__fa                 3.1622      3.4    3.1622     0.0000  0.0000  FA_0
+generate_block_10__fa                3.0586      3.3    3.0586     0.0000  0.0000  FA_22
+generate_block_11__fa                2.7475      3.0    2.7475     0.0000  0.0000  FA_21
+generate_block_12__fa                3.1104      3.4    3.1104     0.0000  0.0000  FA_20
+generate_block_13__fa                3.1104      3.4    3.1104     0.0000  0.0000  FA_19
+generate_block_14__fa                2.7475      3.0    2.7475     0.0000  0.0000  FA_18
+generate_block_15__fa                3.1104      3.4    3.1104     0.0000  0.0000  FA_17
+generate_block_16__fa                3.1104      3.4    3.1104     0.0000  0.0000  FA_16
+generate_block_17__fa                2.7475      3.0    2.7475     0.0000  0.0000  FA_15
+generate_block_18__fa                2.6438      2.9    2.6438     0.0000  0.0000  FA_14
+generate_block_19__fa                2.5920      2.8    2.5920     0.0000  0.0000  FA_13
+generate_block_1__fa                 3.6806      4.0    3.6806     0.0000  0.0000  FA_31
+generate_block_20__fa                3.0067      3.3    3.0067     0.0000  0.0000  FA_12
+generate_block_21__fa                2.5920      2.8    2.5920     0.0000  0.0000  FA_11
+generate_block_22__fa                3.1104      3.4    3.1104     0.0000  0.0000  FA_10
+generate_block_23__fa                3.1104      3.4    3.1104     0.0000  0.0000  FA_9
+generate_block_24__fa                2.7475      3.0    2.7475     0.0000  0.0000  FA_8
+generate_block_25__fa                3.1104      3.4    3.1104     0.0000  0.0000  FA_7
+generate_block_26__fa                2.7475      3.0    2.7475     0.0000  0.0000  FA_6
+generate_block_27__fa                3.1104      3.4    3.1104     0.0000  0.0000  FA_5
+generate_block_28__fa                3.1104      3.4    3.1104     0.0000  0.0000  FA_4
+generate_block_29__fa                2.5402      2.7    2.5402     0.0000  0.0000  FA_3
+generate_block_2__fa                 2.7475      3.0    2.7475     0.0000  0.0000  FA_30
+generate_block_30__fa                2.0736      2.2    2.0736     0.0000  0.0000  FA_2
+generate_block_31__fa                1.8144      2.0    1.8144     0.0000  0.0000  FA_1
+generate_block_3__fa                 3.1104      3.4    3.1104     0.0000  0.0000  FA_29
+generate_block_4__fa                 3.1104      3.4    3.1104     0.0000  0.0000  FA_28
+generate_block_5__fa                 3.1104      3.4    3.1104     0.0000  0.0000  FA_27
+generate_block_6__fa                 3.0586      3.3    3.0586     0.0000  0.0000  FA_26
+generate_block_7__fa                 2.5920      2.8    2.5920     0.0000  0.0000  FA_25
+generate_block_8__fa                 3.1104      3.4    3.1104     0.0000  0.0000  FA_24
+generate_block_9__fa                 2.7475      3.0    2.7475     0.0000  0.0000  FA_23
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+Total                                                  92.4826     0.0000  0.0000
+
+1

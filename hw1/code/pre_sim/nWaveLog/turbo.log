@@ -1,0 +1,3 @@
+Command Line: /usr/cad/synopsys/verdi/2023.12/platform/LINUXAMD64/bin/Novas -nWave
+uname(Linux Elden 3.10.0-1160.119.1.el7.x86_64 #1 SMP Tue Jun 4 14:43:51 UTC 2024 x86_64)
+au time 1023.024014 12.490181 10.321250 delta 435093504 435093504 total 1095897088 1095897088

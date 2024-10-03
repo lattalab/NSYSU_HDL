@@ -1,0 +1,5 @@
+{"vcs1":{"timestamp_begin":1727942342.977973663, "rt":0.41, "ut":0.14, "st":0.08}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1727942342.039463501}
+{"VCS_COMP_START_TIME": 1727942342.039463501}
+{"VCS_COMP_END_TIME": 1727942345.300041374}
+{"VCS_USER_OPTIONS": "-R -error=noMPD -debug_access+all /home/B103040045_HDL/hw1/code/post_sim/post_syn_testbench.v /home/B103040045_HDL/hw1/code/gatelevel/adder_behavior_delay/adder_behavior_delay.v /home/B103040045_HDL/hw1/code/gatelevel/adder_dataflow_delay/adder_dataflow_delay.v /home/B103040045_HDL/hw1/code/gatelevel/adder_structure_delay/adder_structure_delay.v /home/B103040045_HDL/hw1/code/gatelevel/adder_behavior_reg_delay/adder_behavior_reg_delay.v /home/B103040045_HDL/hw1/code/gatelevel/adder_dataflow_reg_delay/adder_dataflow_reg_delay.v /home/B103040045_HDL/hw1/code/gatelevel/adder_structure_reg_delay/adder_structure_reg_delay.v /cad/CBDK/ADFP/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/VERILOG/N16ADFP_StdCell.v +full64 +access+r +vcs+fsdbon +fsdb+mda +fsdbfile+6adder.fsdb +neg_tchk"}

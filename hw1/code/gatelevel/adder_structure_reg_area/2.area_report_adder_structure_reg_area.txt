@@ -1,0 +1,108 @@
+ 
+****************************************
+Report : area
+Design : adder_structure_reg
+Version: V-2023.12
+Date   : Thu Oct  3 15:28:52 2024
+****************************************
+
+Library(s) Used:
+
+    N16ADFP_StdCellss0p72vm40c_ccs (File: /cad/CBDK/ADFP/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.db)
+
+Number of ports:                          358
+Number of nets:                           454
+Number of cells:                          194
+Number of combinational cells:             96
+Number of sequential cells:                33
+Number of macros/black boxes:               0
+Number of buf/inv:                          0
+Number of references:                      65
+
+Combinational area:                 48.107521
+Buf/Inv area:                        0.000000
+Noncombinational area:              30.792960
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                    78.900481
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+adder_structure_reg                 78.9005    100.0    0.0000     0.0000  0.0000  adder_structure_reg
+ff_co                                0.9331      1.2    0.0000     0.9331  0.0000  D_FF_1
+generate_block2_0__ff_sum            0.9331      1.2    0.0000     0.9331  0.0000  D_FF_0
+generate_block2_10__ff_sum           0.9331      1.2    0.0000     0.9331  0.0000  D_FF_23
+generate_block2_11__ff_sum           0.9331      1.2    0.0000     0.9331  0.0000  D_FF_22
+generate_block2_12__ff_sum           0.9331      1.2    0.0000     0.9331  0.0000  D_FF_21
+generate_block2_13__ff_sum           0.9331      1.2    0.0000     0.9331  0.0000  D_FF_20
+generate_block2_14__ff_sum           0.9331      1.2    0.0000     0.9331  0.0000  D_FF_19
+generate_block2_15__ff_sum           0.9331      1.2    0.0000     0.9331  0.0000  D_FF_18
+generate_block2_16__ff_sum           0.9331      1.2    0.0000     0.9331  0.0000  D_FF_17
+generate_block2_17__ff_sum           0.9331      1.2    0.0000     0.9331  0.0000  D_FF_16
+generate_block2_18__ff_sum           0.9331      1.2    0.0000     0.9331  0.0000  D_FF_15
+generate_block2_19__ff_sum           0.9331      1.2    0.0000     0.9331  0.0000  D_FF_14
+generate_block2_1__ff_sum            0.9331      1.2    0.0000     0.9331  0.0000  D_FF_32
+generate_block2_20__ff_sum           0.9331      1.2    0.0000     0.9331  0.0000  D_FF_13
+generate_block2_21__ff_sum           0.9331      1.2    0.0000     0.9331  0.0000  D_FF_12
+generate_block2_22__ff_sum           0.9331      1.2    0.0000     0.9331  0.0000  D_FF_11
+generate_block2_23__ff_sum           0.9331      1.2    0.0000     0.9331  0.0000  D_FF_10
+generate_block2_24__ff_sum           0.9331      1.2    0.0000     0.9331  0.0000  D_FF_9
+generate_block2_25__ff_sum           0.9331      1.2    0.0000     0.9331  0.0000  D_FF_8
+generate_block2_26__ff_sum           0.9331      1.2    0.0000     0.9331  0.0000  D_FF_7
+generate_block2_27__ff_sum           0.9331      1.2    0.0000     0.9331  0.0000  D_FF_6
+generate_block2_28__ff_sum           0.9331      1.2    0.0000     0.9331  0.0000  D_FF_5
+generate_block2_29__ff_sum           0.9331      1.2    0.0000     0.9331  0.0000  D_FF_4
+generate_block2_2__ff_sum            0.9331      1.2    0.0000     0.9331  0.0000  D_FF_31
+generate_block2_30__ff_sum           0.9331      1.2    0.0000     0.9331  0.0000  D_FF_3
+generate_block2_31__ff_sum           0.9331      1.2    0.0000     0.9331  0.0000  D_FF_2
+generate_block2_3__ff_sum            0.9331      1.2    0.0000     0.9331  0.0000  D_FF_30
+generate_block2_4__ff_sum            0.9331      1.2    0.0000     0.9331  0.0000  D_FF_29
+generate_block2_5__ff_sum            0.9331      1.2    0.0000     0.9331  0.0000  D_FF_28
+generate_block2_6__ff_sum            0.9331      1.2    0.0000     0.9331  0.0000  D_FF_27
+generate_block2_7__ff_sum            0.9331      1.2    0.0000     0.9331  0.0000  D_FF_26
+generate_block2_8__ff_sum            0.9331      1.2    0.0000     0.9331  0.0000  D_FF_25
+generate_block2_9__ff_sum            0.9331      1.2    0.0000     0.9331  0.0000  D_FF_24
+generate_block_0__fa                 1.5034      1.9    1.5034     0.0000  0.0000  FA_0
+generate_block_10__fa                1.5034      1.9    1.5034     0.0000  0.0000  FA_22
+generate_block_11__fa                1.5034      1.9    1.5034     0.0000  0.0000  FA_21
+generate_block_12__fa                1.5034      1.9    1.5034     0.0000  0.0000  FA_20
+generate_block_13__fa                1.5034      1.9    1.5034     0.0000  0.0000  FA_19
+generate_block_14__fa                1.5034      1.9    1.5034     0.0000  0.0000  FA_18
+generate_block_15__fa                1.5034      1.9    1.5034     0.0000  0.0000  FA_17
+generate_block_16__fa                1.5034      1.9    1.5034     0.0000  0.0000  FA_16
+generate_block_17__fa                1.5034      1.9    1.5034     0.0000  0.0000  FA_15
+generate_block_18__fa                1.5034      1.9    1.5034     0.0000  0.0000  FA_14
+generate_block_19__fa                1.5034      1.9    1.5034     0.0000  0.0000  FA_13
+generate_block_1__fa                 1.5034      1.9    1.5034     0.0000  0.0000  FA_31
+generate_block_20__fa                1.5034      1.9    1.5034     0.0000  0.0000  FA_12
+generate_block_21__fa                1.5034      1.9    1.5034     0.0000  0.0000  FA_11
+generate_block_22__fa                1.5034      1.9    1.5034     0.0000  0.0000  FA_10
+generate_block_23__fa                1.5034      1.9    1.5034     0.0000  0.0000  FA_9
+generate_block_24__fa                1.5034      1.9    1.5034     0.0000  0.0000  FA_8
+generate_block_25__fa                1.5034      1.9    1.5034     0.0000  0.0000  FA_7
+generate_block_26__fa                1.5034      1.9    1.5034     0.0000  0.0000  FA_6
+generate_block_27__fa                1.5034      1.9    1.5034     0.0000  0.0000  FA_5
+generate_block_28__fa                1.5034      1.9    1.5034     0.0000  0.0000  FA_4
+generate_block_29__fa                1.5034      1.9    1.5034     0.0000  0.0000  FA_3
+generate_block_2__fa                 1.5034      1.9    1.5034     0.0000  0.0000  FA_30
+generate_block_30__fa                1.5034      1.9    1.5034     0.0000  0.0000  FA_2
+generate_block_31__fa                1.5034      1.9    1.5034     0.0000  0.0000  FA_1
+generate_block_3__fa                 1.5034      1.9    1.5034     0.0000  0.0000  FA_29
+generate_block_4__fa                 1.5034      1.9    1.5034     0.0000  0.0000  FA_28
+generate_block_5__fa                 1.5034      1.9    1.5034     0.0000  0.0000  FA_27
+generate_block_6__fa                 1.5034      1.9    1.5034     0.0000  0.0000  FA_26
+generate_block_7__fa                 1.5034      1.9    1.5034     0.0000  0.0000  FA_25
+generate_block_8__fa                 1.5034      1.9    1.5034     0.0000  0.0000  FA_24
+generate_block_9__fa                 1.5034      1.9    1.5034     0.0000  0.0000  FA_23
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+Total                                                  48.1075    30.7930  0.0000
+
+1

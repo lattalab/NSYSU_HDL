@@ -1,0 +1,86 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : adder_dataflow_reg
+Version: V-2023.12
+Date   : Thu Oct  3 15:26:39 2024
+****************************************
+
+Operating Conditions: ss0p72vm40c   Library: N16ADFP_StdCellss0p72vm40c_ccs
+Wire Load Model Mode: top
+
+  Startpoint: b[0] (input port clocked by clk)
+  Endpoint: generate_block_31__ff_sum/q_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  adder_dataflow_reg ZeroWireload          N16ADFP_StdCellss0p72vm40c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  input external delay                                0.000000   0.000000 f
+  b[0] (in)                                           0.000000   0.000000 f
+  add_1_root_add_12_2/B[0] (adder_dataflow_reg_DW01_add_1)
+                                                      0.000000   0.000000 f
+  add_1_root_add_12_2/U203/ZN (NR2D1BWP16P90LVT)      0.008940   0.008940 r
+  add_1_root_add_12_2/U201/ZN (OAI21D1BWP16P90LVT)    0.013597   0.022537 f
+  add_1_root_add_12_2/U229/ZN (AOI21D1BWP16P90LVT)    0.012419   0.034956 r
+  add_1_root_add_12_2/U211/ZN (OAI21D1BWP16P90LVT)    0.013211   0.048167 f
+  add_1_root_add_12_2/U215/ZN (AOI21D1BWP16P90LVT)    0.010810   0.058977 r
+  add_1_root_add_12_2/U261/ZN (OAI21D1BWP16P90LVT)    0.013404   0.072381 f
+  add_1_root_add_12_2/U258/ZN (AOI21D1BWP16P90LVT)    0.013111   0.085492 r
+  add_1_root_add_12_2/U265/ZN (OAI21D1BWP16P90LVT)    0.014168   0.099660 f
+  add_1_root_add_12_2/U268/ZN (AOI21D1BWP16P90LVT)    0.015826   0.115486 r
+  add_1_root_add_12_2/U272/ZN (OAI21D1BWP16P90LVT)    0.015185   0.130672 f
+  add_1_root_add_12_2/U270/ZN (AOI21D1BWP16P90LVT)    0.015826   0.146498 r
+  add_1_root_add_12_2/U275/ZN (OAI21D1BWP16P90LVT)    0.015185   0.161684 f
+  add_1_root_add_12_2/U216/ZN (AOI21D1BWP16P90LVT)    0.018139   0.179823 r
+  add_1_root_add_12_2/U223/ZN (OAI21D1BWP16P90LVT)    0.011238   0.191061 f
+  add_1_root_add_12_2/U212/ZN (AOI21D1BWP16P90LVT)    0.009645   0.200705 r
+  add_1_root_add_12_2/U210/ZN (OAI21D1BWP16P90LVT)    0.013046   0.213751 f
+  add_1_root_add_12_2/U206/ZN (AOI21D1BWP16P90LVT)    0.010813   0.224564 r
+  add_1_root_add_12_2/U228/ZN (OAI21D1BWP16P90LVT)    0.009099   0.233664 f
+  add_1_root_add_12_2/U202/ZN (AOI21D1BWP16P90LVT)    0.017088   0.250751 r
+  add_1_root_add_12_2/U222/ZN (OAI21D1BWP16P90LVT)    0.011376   0.262128 f
+  add_1_root_add_12_2/U213/ZN (AOI21D1BWP16P90LVT)    0.009645   0.271772 r
+  add_1_root_add_12_2/U230/ZN (OAI21D1BWP16P90LVT)    0.009099   0.280872 f
+  add_1_root_add_12_2/U207/ZN (AOI21D1BWP16P90LVT)    0.011996   0.292868 r
+  add_1_root_add_12_2/U217/ZN (OAI21D1BWP16P90LVT)    0.009845   0.302713 f
+  add_1_root_add_12_2/U214/ZN (AOI21D1BWP16P90LVT)    0.009645   0.312358 r
+  add_1_root_add_12_2/U231/ZN (OAI21D1BWP16P90LVT)    0.009511   0.321869 f
+  add_1_root_add_12_2/U254/ZN (IOA21D1BWP16P90LVT)    0.016904   0.338773 f
+  add_1_root_add_12_2/U295/CO (FA1D1BWP16P90LVT)      0.027333   0.366106 f
+  add_1_root_add_12_2/U296/CO (FA1D1BWP16P90LVT)      0.027621   0.393727 f
+  add_1_root_add_12_2/U297/CO (FA1D1BWP16P90LVT)      0.027625   0.421352 f
+  add_1_root_add_12_2/U298/CO (FA1D1BWP16P90LVT)      0.027625   0.448977 f
+  add_1_root_add_12_2/U2/S (FA1D1BWP16P90LVT)         0.038781   0.487757 r
+  add_1_root_add_12_2/SUM[31] (adder_dataflow_reg_DW01_add_1)
+                                                      0.000000   0.487757 r
+  generate_block_31__ff_sum/d (D_FF_2)                0.000000   0.487757 r
+  generate_block_31__ff_sum/q_reg/D (DFQD2BWP16P90LVT)
+                                                      0.000000   0.487757 r
+  data arrival time                                              0.487757
+
+  clock clk (rise edge)                               0.503641   0.503641
+  clock network delay (ideal)                         0.000000   0.503641
+  generate_block_31__ff_sum/q_reg/CP (DFQD2BWP16P90LVT)
+                                                      0.000000   0.503641 r
+  library setup time                                  -0.013960  0.489681
+  data required time                                             0.489681
+  --------------------------------------------------------------------------
+  data required time                                             0.489681
+  data arrival time                                              -0.487757
+  --------------------------------------------------------------------------
+  slack (MET)                                                    0.001923
+
+
+1

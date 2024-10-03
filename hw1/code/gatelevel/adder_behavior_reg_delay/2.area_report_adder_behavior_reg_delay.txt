@@ -1,0 +1,77 @@
+ 
+****************************************
+Report : area
+Design : adder_behavior_reg
+Version: V-2023.12
+Date   : Thu Oct  3 15:23:31 2024
+****************************************
+
+Library(s) Used:
+
+    N16ADFP_StdCellss0p72vm40c_ccs (File: /cad/CBDK/ADFP/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.db)
+
+Number of ports:                          296
+Number of nets:                           630
+Number of cells:                          402
+Number of combinational cells:            335
+Number of sequential cells:                33
+Number of macros/black boxes:               0
+Number of buf/inv:                         56
+Number of references:                      35
+
+Combinational area:                109.693442
+Buf/Inv area:                        9.383040
+Noncombinational area:              30.792960
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                   140.486402
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  -----------------------------
+adder_behavior_reg                 140.4864    100.0    0.2592     0.0000  0.0000  adder_behavior_reg
+add_1_root_add_14_2                109.4342     77.9  109.4342     0.0000  0.0000  adder_behavior_reg_DW01_add_1
+ff_co                                0.9331      0.7    0.0000     0.9331  0.0000  D_FF_1
+ff_loop_0__ff_sum                    0.9331      0.7    0.0000     0.9331  0.0000  D_FF_0
+ff_loop_10__ff_sum                   0.9331      0.7    0.0000     0.9331  0.0000  D_FF_23
+ff_loop_11__ff_sum                   0.9331      0.7    0.0000     0.9331  0.0000  D_FF_22
+ff_loop_12__ff_sum                   0.9331      0.7    0.0000     0.9331  0.0000  D_FF_21
+ff_loop_13__ff_sum                   0.9331      0.7    0.0000     0.9331  0.0000  D_FF_20
+ff_loop_14__ff_sum                   0.9331      0.7    0.0000     0.9331  0.0000  D_FF_19
+ff_loop_15__ff_sum                   0.9331      0.7    0.0000     0.9331  0.0000  D_FF_18
+ff_loop_16__ff_sum                   0.9331      0.7    0.0000     0.9331  0.0000  D_FF_17
+ff_loop_17__ff_sum                   0.9331      0.7    0.0000     0.9331  0.0000  D_FF_16
+ff_loop_18__ff_sum                   0.9331      0.7    0.0000     0.9331  0.0000  D_FF_15
+ff_loop_19__ff_sum                   0.9331      0.7    0.0000     0.9331  0.0000  D_FF_14
+ff_loop_1__ff_sum                    0.9331      0.7    0.0000     0.9331  0.0000  D_FF_32
+ff_loop_20__ff_sum                   0.9331      0.7    0.0000     0.9331  0.0000  D_FF_13
+ff_loop_21__ff_sum                   0.9331      0.7    0.0000     0.9331  0.0000  D_FF_12
+ff_loop_22__ff_sum                   0.9331      0.7    0.0000     0.9331  0.0000  D_FF_11
+ff_loop_23__ff_sum                   0.9331      0.7    0.0000     0.9331  0.0000  D_FF_10
+ff_loop_24__ff_sum                   0.9331      0.7    0.0000     0.9331  0.0000  D_FF_9
+ff_loop_25__ff_sum                   0.9331      0.7    0.0000     0.9331  0.0000  D_FF_8
+ff_loop_26__ff_sum                   0.9331      0.7    0.0000     0.9331  0.0000  D_FF_7
+ff_loop_27__ff_sum                   0.9331      0.7    0.0000     0.9331  0.0000  D_FF_6
+ff_loop_28__ff_sum                   0.9331      0.7    0.0000     0.9331  0.0000  D_FF_5
+ff_loop_29__ff_sum                   0.9331      0.7    0.0000     0.9331  0.0000  D_FF_4
+ff_loop_2__ff_sum                    0.9331      0.7    0.0000     0.9331  0.0000  D_FF_31
+ff_loop_30__ff_sum                   0.9331      0.7    0.0000     0.9331  0.0000  D_FF_3
+ff_loop_31__ff_sum                   0.9331      0.7    0.0000     0.9331  0.0000  D_FF_2
+ff_loop_3__ff_sum                    0.9331      0.7    0.0000     0.9331  0.0000  D_FF_30
+ff_loop_4__ff_sum                    0.9331      0.7    0.0000     0.9331  0.0000  D_FF_29
+ff_loop_5__ff_sum                    0.9331      0.7    0.0000     0.9331  0.0000  D_FF_28
+ff_loop_6__ff_sum                    0.9331      0.7    0.0000     0.9331  0.0000  D_FF_27
+ff_loop_7__ff_sum                    0.9331      0.7    0.0000     0.9331  0.0000  D_FF_26
+ff_loop_8__ff_sum                    0.9331      0.7    0.0000     0.9331  0.0000  D_FF_25
+ff_loop_9__ff_sum                    0.9331      0.7    0.0000     0.9331  0.0000  D_FF_24
+--------------------------------  ---------  -------  --------  ---------  ------  -----------------------------
+Total                                                 109.6934    30.7930  0.0000
+
+1

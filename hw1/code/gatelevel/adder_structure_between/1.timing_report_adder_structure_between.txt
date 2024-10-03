@@ -1,0 +1,172 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : adder_structure
+Version: V-2023.12
+Date   : Thu Oct  3 15:05:37 2024
+****************************************
+
+Operating Conditions: ss0p72vm40c   Library: N16ADFP_StdCellss0p72vm40c_ccs
+Wire Load Model Mode: top
+
+  Startpoint: ci (input port clocked by clk)
+  Endpoint: s_structure[31]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  adder_structure    ZeroWireload          N16ADFP_StdCellss0p72vm40c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                0.000000   0.000000 r
+  ci (in)                                             0.000000   0.000000 r
+  generate_block_0__fa/c_in (FA_0)                    0.000000   0.000000 r
+  generate_block_0__fa/U1/ZN (CKND1BWP16P90LVT)       0.005169   0.005169 f
+  generate_block_0__fa/U4/Z (OR2D1BWP16P90LVT)        0.012795   0.017964 f
+  generate_block_0__fa/U10/ZN (ND2D1BWP16P90LVT)      0.005930   0.023895 r
+  generate_block_0__fa/U3/ZN (ND2D1BWP16P90LVT)       0.008557   0.032452 f
+  generate_block_0__fa/U11/ZN (ND2D2BWP16P90LVT)      0.008181   0.040633 r
+  generate_block_0__fa/c_out (FA_0)                   0.000000   0.040633 r
+  generate_block_1__fa/c_in (FA_31)                   0.000000   0.040633 r
+  generate_block_1__fa/U3/ZN (CKND2BWP16P90LVT)       0.005136   0.045769 f
+  generate_block_1__fa/U1/ZN (OAI22D2BWP16P90LVT)     0.010997   0.056765 r
+  generate_block_1__fa/c_out (FA_31)                  0.000000   0.056765 r
+  generate_block_2__fa/c_in (FA_30)                   0.000000   0.056765 r
+  generate_block_2__fa/U3/ZN (CKND2BWP16P90LVT)       0.005403   0.062169 f
+  generate_block_2__fa/U5/ZN (OAI22D1BWP16P90LVT)     0.008411   0.070580 r
+  generate_block_2__fa/c_out (FA_30)                  0.000000   0.070580 r
+  generate_block_3__fa/c_in (FA_29)                   0.000000   0.070580 r
+  generate_block_3__fa/U3/ZN (INVD1BWP16P90LVT)       0.011823   0.082403 f
+  generate_block_3__fa/U1/ZN (OAI22D2BWP16P90LVT)     0.012783   0.095186 r
+  generate_block_3__fa/c_out (FA_29)                  0.000000   0.095186 r
+  generate_block_4__fa/c_in (FA_28)                   0.000000   0.095186 r
+  generate_block_4__fa/U2/ZN (INVD1BWP16P90LVT)       0.007576   0.102762 f
+  generate_block_4__fa/U3/ZN (OAI22D1BWP16P90LVT)     0.008792   0.111554 r
+  generate_block_4__fa/c_out (FA_28)                  0.000000   0.111554 r
+  generate_block_5__fa/c_in (FA_27)                   0.000000   0.111554 r
+  generate_block_5__fa/U3/ZN (INVD1BWP16P90LVT)       0.010431   0.121985 f
+  generate_block_5__fa/U2/ZN (OAI22D1BWP16P90LVT)     0.009481   0.131466 r
+  generate_block_5__fa/c_out (FA_27)                  0.000000   0.131466 r
+  generate_block_6__fa/c_in (FA_26)                   0.000000   0.131466 r
+  generate_block_6__fa/U5/ZN (INVD1BWP16P90LVT)       0.008565   0.140031 f
+  generate_block_6__fa/U7/ZN (OAI22D1BWP16P90LVT)     0.008995   0.149026 r
+  generate_block_6__fa/c_out (FA_26)                  0.000000   0.149026 r
+  generate_block_7__fa/c_in (FA_25)                   0.000000   0.149026 r
+  generate_block_7__fa/U4/ZN (INVD1BWP16P90LVT)       0.010431   0.159457 f
+  generate_block_7__fa/U3/ZN (OAI22D1BWP16P90LVT)     0.009481   0.168938 r
+  generate_block_7__fa/c_out (FA_25)                  0.000000   0.168938 r
+  generate_block_8__fa/c_in (FA_24)                   0.000000   0.168938 r
+  generate_block_8__fa/U4/ZN (INVD1BWP16P90LVT)       0.010834   0.179772 f
+  generate_block_8__fa/U6/ZN (OAI22D1BWP16P90LVT)     0.009585   0.189356 r
+  generate_block_8__fa/c_out (FA_24)                  0.000000   0.189356 r
+  generate_block_9__fa/c_in (FA_23)                   0.000000   0.189356 r
+  generate_block_9__fa/U1/ZN (INVD1BWP16P90LVT)       0.010834   0.200190 f
+  generate_block_9__fa/U3/ZN (OAI22D1BWP16P90LVT)     0.011761   0.211951 r
+  generate_block_9__fa/c_out (FA_23)                  0.000000   0.211951 r
+  generate_block_10__fa/c_in (FA_22)                  0.000000   0.211951 r
+  generate_block_10__fa/U2/ZN (CKND2BWP16P90LVT)      0.008596   0.220547 f
+  generate_block_10__fa/U1/ZN (OAI22D2BWP16P90LVT)    0.008587   0.229135 r
+  generate_block_10__fa/c_out (FA_22)                 0.000000   0.229135 r
+  generate_block_11__fa/c_in (FA_21)                  0.000000   0.229135 r
+  generate_block_11__fa/U6/ZN (INVD1BWP16P90LVT)      0.008771   0.237906 f
+  generate_block_11__fa/U8/ZN (OAI22D1BWP16P90LVT)    0.009046   0.246952 r
+  generate_block_11__fa/c_out (FA_21)                 0.000000   0.246952 r
+  generate_block_12__fa/c_in (FA_20)                  0.000000   0.246952 r
+  generate_block_12__fa/U4/ZN (INVD1BWP16P90LVT)      0.010431   0.257384 f
+  generate_block_12__fa/U3/ZN (OAI22D1BWP16P90LVT)    0.009481   0.266864 r
+  generate_block_12__fa/c_out (FA_20)                 0.000000   0.266864 r
+  generate_block_13__fa/c_in (FA_19)                  0.000000   0.266864 r
+  generate_block_13__fa/U4/ZN (INVD1BWP16P90LVT)      0.010834   0.277698 f
+  generate_block_13__fa/U6/ZN (OAI22D1BWP16P90LVT)    0.009584   0.287282 r
+  generate_block_13__fa/c_out (FA_19)                 0.000000   0.287282 r
+  generate_block_14__fa/c_in (FA_18)                  0.000000   0.287282 r
+  generate_block_14__fa/U1/ZN (INVD1BWP16P90LVT)      0.010834   0.298116 f
+  generate_block_14__fa/U3/ZN (OAI22D1BWP16P90LVT)    0.009584   0.307701 r
+  generate_block_14__fa/c_out (FA_18)                 0.000000   0.307701 r
+  generate_block_15__fa/c_in (FA_17)                  0.000000   0.307701 r
+  generate_block_15__fa/U1/ZN (INVD1BWP16P90LVT)      0.012174   0.319875 f
+  generate_block_15__fa/U2/ZN (OAI22D2BWP16P90LVT)    0.010951   0.330825 r
+  generate_block_15__fa/c_out (FA_17)                 0.000000   0.330825 r
+  generate_block_16__fa/c_in (FA_16)                  0.000000   0.330825 r
+  generate_block_16__fa/U4/ZN (CKND2BWP16P90LVT)      0.009567   0.340392 f
+  generate_block_16__fa/U3/ZN (OAI22D4BWP16P90LVT)    0.009570   0.349962 r
+  generate_block_16__fa/c_out (FA_16)                 0.000000   0.349962 r
+  generate_block_17__fa/c_in (FA_15)                  0.000000   0.349962 r
+  generate_block_17__fa/U2/ZN (INVD2BWP16P90LVT)      0.005089   0.355051 f
+  generate_block_17__fa/U1/ZN (OAI22D1BWP16P90LVT)    0.008313   0.363365 r
+  generate_block_17__fa/c_out (FA_15)                 0.000000   0.363365 r
+  generate_block_18__fa/c_in (FA_14)                  0.000000   0.363365 r
+  generate_block_18__fa/U2/ZN (INVD1BWP16P90LVT)      0.008565   0.371930 f
+  generate_block_18__fa/U7/ZN (OAI22D1BWP16P90LVT)    0.008995   0.380925 r
+  generate_block_18__fa/c_out (FA_14)                 0.000000   0.380925 r
+  generate_block_19__fa/c_in (FA_13)                  0.000000   0.380925 r
+  generate_block_19__fa/U1/ZN (INVD1BWP16P90LVT)      0.010834   0.391758 f
+  generate_block_19__fa/U3/ZN (OAI22D1BWP16P90LVT)    0.009593   0.401352 r
+  generate_block_19__fa/c_out (FA_13)                 0.000000   0.401352 r
+  generate_block_20__fa/c_in (FA_12)                  0.000000   0.401352 r
+  generate_block_20__fa/U2/ZN (CKND1BWP16P90LVT)      0.010849   0.412201 f
+  generate_block_20__fa/U1/ZN (OAI22D1BWP16P90LVT)    0.009595   0.421795 r
+  generate_block_20__fa/c_out (FA_12)                 0.000000   0.421795 r
+  generate_block_21__fa/c_in (FA_11)                  0.000000   0.421795 r
+  generate_block_21__fa/U1/ZN (CKND1BWP16P90LVT)      0.008584   0.430379 f
+  generate_block_21__fa/U2/ZN (OAI22D1BWP16P90LVT)    0.008991   0.439370 r
+  generate_block_21__fa/c_out (FA_11)                 0.000000   0.439370 r
+  generate_block_22__fa/c_in (FA_10)                  0.000000   0.439370 r
+  generate_block_22__fa/U4/ZN (INVD1BWP16P90LVT)      0.008565   0.447935 f
+  generate_block_22__fa/U3/ZN (OAI22D1BWP16P90LVT)    0.008995   0.456930 r
+  generate_block_22__fa/c_out (FA_10)                 0.000000   0.456930 r
+  generate_block_23__fa/c_in (FA_9)                   0.000000   0.456930 r
+  generate_block_23__fa/U5/ZN (INVD1BWP16P90LVT)      0.008565   0.465495 f
+  generate_block_23__fa/U7/ZN (OAI22D1BWP16P90LVT)    0.011125   0.476620 r
+  generate_block_23__fa/c_out (FA_9)                  0.000000   0.476620 r
+  generate_block_24__fa/c_in (FA_8)                   0.000000   0.476620 r
+  generate_block_24__fa/U2/ZN (CKND2BWP16P90LVT)      0.011002   0.487623 f
+  generate_block_24__fa/U1/ZN (OAI22D4BWP16P90LVT)    0.009687   0.497310 r
+  generate_block_24__fa/c_out (FA_8)                  0.000000   0.497310 r
+  generate_block_25__fa/c_in (FA_7)                   0.000000   0.497310 r
+  generate_block_25__fa/U2/ZN (CKND2BWP16P90LVT)      0.008500   0.505810 f
+  generate_block_25__fa/U1/ZN (OAI22D4BWP16P90LVT)    0.009188   0.514998 r
+  generate_block_25__fa/c_out (FA_7)                  0.000000   0.514998 r
+  generate_block_26__fa/c_in (FA_6)                   0.000000   0.514998 r
+  generate_block_26__fa/U2/ZN (CKND2BWP16P90LVT)      0.005019   0.520017 f
+  generate_block_26__fa/U1/ZN (OAI22D1BWP16P90LVT)    0.010370   0.530387 r
+  generate_block_26__fa/c_out (FA_6)                  0.000000   0.530387 r
+  generate_block_27__fa/c_in (FA_5)                   0.000000   0.530387 r
+  generate_block_27__fa/U3/ZN (CKND2BWP16P90LVT)      0.009747   0.540134 f
+  generate_block_27__fa/U2/ZN (OAI22D4BWP16P90LVT)    0.009316   0.549450 r
+  generate_block_27__fa/c_out (FA_5)                  0.000000   0.549450 r
+  generate_block_28__fa/c_in (FA_4)                   0.000000   0.549450 r
+  generate_block_28__fa/U3/ZN (INVD4BWP16P90LVT)      0.007049   0.556499 f
+  generate_block_28__fa/U4/ZN (OAI22D4BWP16P90LVT)    0.009245   0.565744 r
+  generate_block_28__fa/c_out (FA_4)                  0.000000   0.565744 r
+  generate_block_29__fa/c_in (FA_3)                   0.000000   0.565744 r
+  generate_block_29__fa/U2/ZN (MOAI22D2BWP16P90LVT)   0.017020   0.582763 r
+  generate_block_29__fa/c_out (FA_3)                  0.000000   0.582763 r
+  generate_block_30__fa/c_in (FA_2)                   0.000000   0.582763 r
+  generate_block_30__fa/U2/ZN (CKND1BWP16P90LVT)      0.012378   0.595142 f
+  generate_block_30__fa/U1/ZN (OAI22D4BWP16P90LVT)    0.009518   0.604659 r
+  generate_block_30__fa/c_out (FA_2)                  0.000000   0.604659 r
+  generate_block_31__fa/c_in (FA_1)                   0.000000   0.604659 r
+  generate_block_31__fa/U1/ZN (XNR2D1BWP16P90LVT)     0.015031   0.619690 f
+  generate_block_31__fa/sum (FA_1)                    0.000000   0.619690 f
+  s_structure[31] (out)                               0.000000   0.619690 f
+  data arrival time                                              0.619690
+
+  max_delay                                           0.619783   0.619783
+  output external delay                               0.000000   0.619783
+  data required time                                             0.619783
+  --------------------------------------------------------------------------
+  data required time                                             0.619783
+  data arrival time                                              -0.619690
+  --------------------------------------------------------------------------
+  slack (MET)                                                    0.000093
+
+
+1
