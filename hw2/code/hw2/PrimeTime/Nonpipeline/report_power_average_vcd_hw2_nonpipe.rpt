@@ -1,0 +1,20 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : hw2_nonpipe
+Version: V-2023.12
+Date   : Sun Oct 20 23:07:24 2024
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+hw2_nonpipe                           7.82e-06 5.78e-06 4.88e-07 1.41e-05 100.0
+  add_2 (hw2_nonpipe_DW01_add_2)      7.85e-07 6.77e-07 6.21e-08 1.52e-06  10.8
+  mult_2_2 (hw2_nonpipe_DW_mult_uns_6)
+                                      3.04e-06 2.16e-06 1.75e-07 5.37e-06  38.1
+  mult_2 (hw2_nonpipe_DW_mult_uns_7)  2.75e-06 1.94e-06 1.42e-07 4.83e-06  34.3
+  sub_2 (hw2_nonpipe_DW01_sub_2)      1.03e-06 9.88e-07 1.00e-07 2.12e-06  15.0
+1

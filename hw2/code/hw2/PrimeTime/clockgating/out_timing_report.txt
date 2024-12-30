@@ -1,0 +1,14 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : hw2_clockgating
+Version: V-2023.12
+Date   : Mon Oct 21 01:52:22 2024
+****************************************
+
+No Paths.
+
+1

@@ -1,0 +1,50 @@
+ 
+****************************************
+Report : area
+Design : hw2_pipe
+Version: V-2023.12
+Date   : Mon Oct 21 02:00:18 2024
+****************************************
+
+Library(s) Used:
+
+    N16ADFP_StdCellss0p72vm40c_ccs (File: /cad/CBDK/ADFP/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.db)
+
+Number of ports:                          236
+Number of nets:                           674
+Number of cells:                          432
+Number of combinational cells:            401
+Number of sequential cells:                24
+Number of macros/black boxes:               0
+Number of buf/inv:                         71
+Number of references:                       2
+
+Combinational area:                154.742403
+Buf/Inv area:                       13.737600
+Noncombinational area:              27.371521
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                   182.113924
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  --------------------
+hw2_pipe                           182.1139    100.0    0.0000     0.0000  0.0000  hw2_pipe
+s1                                  30.6374     16.8    4.1472     0.0000  0.0000  stage1
+s1/add_19                            7.9834      4.4    7.9834     0.0000  0.0000  stage1_DW01_add_0
+s1/dff1                              9.2794      5.1    0.1555     9.1238  0.0000  D_FF_DATA_WIDTH8
+s1/sub_22                            9.2275      5.1    9.2275     0.0000  0.0000  stage1_DW01_sub_0
+s2                                 151.4765     83.2    0.0000     0.0000  0.0000  stage2
+s2/dff2                             18.4032     10.1    0.1555    18.2477  0.0000  D_FF_DATA_WIDTH16
+s2/mult_33                         133.0733     73.1  133.0733     0.0000  0.0000  stage2_DW_mult_uns_2
+--------------------------------  ---------  -------  --------  ---------  ------  --------------------
+Total                                                 154.7424    27.3715  0.0000
+
+1

@@ -1,0 +1,226 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-slack_lesser_than 0.00
+	-max_paths 5
+	-sort_by slack
+Design : hw2_nonpipe
+Version: V-2023.12
+Date   : Sun Oct 20 23:07:24 2024
+****************************************
+
+
+  Startpoint: b[5] (input port clocked by clk)
+  Endpoint: d[10] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  b[5] (in)                                               0.00       0.00 f
+  sub_2/U146/ZN (CKND16BWP16P90LVT)                       0.00 *     0.00 r
+  sub_2/U131/ZN (ND2D2BWP16P90LVT)                        0.01 *     0.01 f
+  sub_2/U130/ZN (OAI21D4BWP16P90LVT)                      0.01 *     0.02 r
+  sub_2/U114/ZN (AOI21D2BWP16P90LVT)                      0.01 *     0.03 f
+  sub_2/U139/ZN (OAI21D1BWP16P90LVT)                      0.01 *     0.04 r
+  sub_2/U133/ZN (ND2D1BWP16P90LVT)                        0.02 *     0.05 f
+  sub_2/U135/ZN (ND2D4BWP16P90LVT)                        0.01 *     0.06 r
+  mult_2_2/U541/ZN (XNR2D2BWP16P90LVT)                    0.02 *     0.09 f
+  mult_2_2/U451/ZN (OAI22D4BWP16P90LVT)                   0.01 *     0.10 r
+  mult_2_2/U421/Z (XOR3D4BWP16P90LVT)                     0.04 *     0.14 f
+  mult_2_2/U142/S (FA1D1BWP16P90LVT)                      0.04 *     0.18 r
+  mult_2_2/U328/ZN (CKND2D4BWP16P90LVT)                   0.01 *     0.19 f
+  mult_2_2/U576/ZN (OAI21D1BWP16P90LVT)                   0.01 *     0.20 r
+  mult_2_2/U553/ZN (INVD1BWP16P90LVT)                     0.01 *     0.21 f
+  mult_2_2/U407/ZN (OAI21D1BWP16P90LVT)                   0.01 *     0.22 r
+  mult_2_2/U629/ZN (XNR2D1BWP16P90LVT)                    0.02 *     0.24 f
+  U23/Z (CKMUX2D1BWP16P90LVT)                             0.01 *     0.25 f
+  d[10] (out)                                             0.00       0.25 f
+  data arrival time                                                  0.25
+
+  max_delay                                               0.25       0.25
+  clock reconvergence pessimism                           0.00       0.25
+  output external delay                                   0.00       0.25
+  data required time                                                 0.25
+  ------------------------------------------------------------------------------
+  data required time                                                 0.25
+  data arrival time                                                 -0.25
+  ------------------------------------------------------------------------------
+  slack (VIOLATED: increase significant digits)                     -0.00
+
+
+  Startpoint: b[5] (input port clocked by clk)
+  Endpoint: d[11] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  b[5] (in)                                               0.00       0.00 f
+  sub_2/U146/ZN (CKND16BWP16P90LVT)                       0.00 *     0.00 r
+  sub_2/U131/ZN (ND2D2BWP16P90LVT)                        0.01 *     0.01 f
+  sub_2/U130/ZN (OAI21D4BWP16P90LVT)                      0.01 *     0.02 r
+  sub_2/U114/ZN (AOI21D2BWP16P90LVT)                      0.01 *     0.03 f
+  sub_2/U139/ZN (OAI21D1BWP16P90LVT)                      0.01 *     0.04 r
+  sub_2/U133/ZN (ND2D1BWP16P90LVT)                        0.02 *     0.05 f
+  sub_2/U135/ZN (ND2D4BWP16P90LVT)                        0.01 *     0.06 r
+  mult_2_2/U569/ZN (XNR2D2BWP16P90LVT)                    0.02 *     0.08 f
+  mult_2_2/U530/ZN (OAI22D2BWP16P90LVT)                   0.02 *     0.10 r
+  mult_2_2/U376/ZN (CKND2BWP16P90LVT)                     0.01 *     0.11 f
+  mult_2_2/U311/ZN (ND2D2BWP16P90LVT)                     0.01 *     0.12 r
+  mult_2_2/U424/ZN (ND2D2BWP16P90LVT)                     0.01 *     0.12 f
+  mult_2_2/U367/ZN (CKND2BWP16P90LVT)                     0.00 *     0.13 r
+  mult_2_2/U415/ZN (ND2D2BWP16P90LVT)                     0.01 *     0.14 f
+  mult_2_2/U397/ZN (ND2D2BWP16P90LVT)                     0.01 *     0.14 r
+  mult_2_2/U581/S (FA1D1BWP16P90LVT)                      0.03 *     0.18 f
+  mult_2_2/U516/ZN (NR2D2BWP16P90LVT)                     0.01 *     0.19 r
+  mult_2_2/U343/ZN (CKNR2D2BWP16P90LVT)                   0.01 *     0.20 f
+  mult_2_2/U455/ZN (AOI21D1BWP16P90)                      0.02 *     0.21 r
+  mult_2_2/U588/Z (XOR2D1BWP16P90LVT)                     0.02 *     0.24 f
+  U36/Z (AO22D1BWP16P90LVT)                               0.02 *     0.25 f
+  d[11] (out)                                             0.00       0.25 f
+  data arrival time                                                  0.25
+
+  max_delay                                               0.25       0.25
+  clock reconvergence pessimism                           0.00       0.25
+  output external delay                                   0.00       0.25
+  data required time                                                 0.25
+  ------------------------------------------------------------------------------
+  data required time                                                 0.25
+  data arrival time                                                 -0.25
+  ------------------------------------------------------------------------------
+  slack (VIOLATED: increase significant digits)                     -0.00
+
+
+  Startpoint: b[0] (input port clocked by clk)
+  Endpoint: d[13] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  b[0] (in)                                               0.00       0.00 f
+  add_2/U71/ZN (NR2D12BWP16P90LVT)                        0.01 *     0.01 r
+  add_2/U107/ZN (INVD4BWP16P90LVT)                        0.00 *     0.01 f
+  add_2/U110/ZN (ND2D2BWP16P90LVT)                        0.00 *     0.01 r
+  add_2/U117/ZN (CKND2BWP16P90LVT)                        0.01 *     0.02 f
+  mult_2/U373/Z (BUFFD8BWP16P90LVT)                       0.02 *     0.03 f
+  mult_2/U335/ZN (XNR2D2BWP16P90LVT)                      0.02 *     0.05 r
+  mult_2/U527/ZN (OAI22D1BWP16P90LVT)                     0.02 *     0.07 f
+  mult_2/U296/CO (HA1D2BWP16P90LVT)                       0.02 *     0.08 f
+  mult_2/U150/S (FA1D1BWP16P90LVT)                        0.04 *     0.12 r
+  mult_2/U333/Z (OR2D2BWP16P90LVT)                        0.01 *     0.14 r
+  mult_2/U318/ZN (AOI21D2BWP16P90LVT)                     0.01 *     0.14 f
+  mult_2/U485/Z (OA21D2BWP16P90LVT)                       0.02 *     0.16 f
+  mult_2/U484/ZN (OAI21D4BWP16P90LVT)                     0.01 *     0.17 r
+  mult_2/U491/ZN (AOI21D2BWP16P90LVT)                     0.01 *     0.18 f
+  mult_2/U483/ZN (OAI21D2BWP16P90LVT)                     0.01 *     0.20 r
+  mult_2/U541/ZN (AOI21D1BWP16P90LVT)                     0.01 *     0.21 f
+  mult_2/U568/ZN (OAI21D1BWP16P90LVT)                     0.01 *     0.22 r
+  mult_2/U573/ZN (XNR2D1BWP16P90LVT)                      0.02 *     0.24 f
+  U37/Z (AO22D1BWP16P90LVT)                               0.01 *     0.25 f
+  d[13] (out)                                             0.00       0.25 f
+  data arrival time                                                  0.25
+
+  max_delay                                               0.25       0.25
+  clock reconvergence pessimism                           0.00       0.25
+  output external delay                                   0.00       0.25
+  data required time                                                 0.25
+  ------------------------------------------------------------------------------
+  data required time                                                 0.25
+  data arrival time                                                 -0.25
+  ------------------------------------------------------------------------------
+  slack (VIOLATED: increase significant digits)                     -0.00
+
+
+  Startpoint: b[0] (input port clocked by clk)
+  Endpoint: d[14] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  b[0] (in)                                               0.00       0.00 f
+  add_2/U71/ZN (NR2D12BWP16P90LVT)                        0.01 *     0.01 r
+  add_2/U107/ZN (INVD4BWP16P90LVT)                        0.00 *     0.01 f
+  add_2/U110/ZN (ND2D2BWP16P90LVT)                        0.00 *     0.01 r
+  add_2/U117/ZN (CKND2BWP16P90LVT)                        0.01 *     0.02 f
+  mult_2/U373/Z (BUFFD8BWP16P90LVT)                       0.02 *     0.03 f
+  mult_2/U335/ZN (XNR2D2BWP16P90LVT)                      0.02 *     0.05 r
+  mult_2/U527/ZN (OAI22D1BWP16P90LVT)                     0.02 *     0.07 f
+  mult_2/U296/CO (HA1D2BWP16P90LVT)                       0.02 *     0.08 f
+  mult_2/U150/S (FA1D1BWP16P90LVT)                        0.04 *     0.12 r
+  mult_2/U333/Z (OR2D2BWP16P90LVT)                        0.01 *     0.14 r
+  mult_2/U318/ZN (AOI21D2BWP16P90LVT)                     0.01 *     0.14 f
+  mult_2/U485/Z (OA21D2BWP16P90LVT)                       0.02 *     0.16 f
+  mult_2/U484/ZN (OAI21D4BWP16P90LVT)                     0.01 *     0.17 r
+  mult_2/U491/ZN (AOI21D2BWP16P90LVT)                     0.01 *     0.18 f
+  mult_2/U483/ZN (OAI21D2BWP16P90LVT)                     0.01 *     0.20 r
+  mult_2/U315/ZN (AOI21D1BWP16P90LVT)                     0.01 *     0.21 f
+  mult_2/U22/ZN (OAI21D1BWP16P90LVT)                      0.01 *     0.22 r
+  mult_2/U572/ZN (XNR2D1BWP16P90LVT)                      0.02 *     0.24 f
+  U38/Z (AO22D1BWP16P90LVT)                               0.01 *     0.25 f
+  d[14] (out)                                             0.00       0.25 f
+  data arrival time                                                  0.25
+
+  max_delay                                               0.25       0.25
+  clock reconvergence pessimism                           0.00       0.25
+  output external delay                                   0.00       0.25
+  data required time                                                 0.25
+  ------------------------------------------------------------------------------
+  data required time                                                 0.25
+  data arrival time                                                 -0.25
+  ------------------------------------------------------------------------------
+  slack (VIOLATED: increase significant digits)                     -0.00
+
+
+  Startpoint: b[2] (input port clocked by clk)
+  Endpoint: d[12] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 r
+  b[2] (in)                                               0.00       0.00 r
+  sub_2/U126/ZN (CKND12BWP16P90LVT)                       0.00 *     0.00 f
+  sub_2/U79/Z (OR2D4BWP16P90LVT)                          0.01 *     0.02 f
+  sub_2/U104/ZN (ND2D2BWP16P90LVT)                        0.00 *     0.02 r
+  sub_2/U78/ZN (XNR2D4BWP16P90LVT)                        0.02 *     0.04 f
+  mult_2_2/U446/Z (XOR2D4BWP16P90LVT)                     0.02 *     0.06 r
+  mult_2_2/U467/ZN (IND2D4BWP16P90LVT)                    0.01 *     0.07 r
+  mult_2_2/U293/ZN (ND2D1BWP16P90)                        0.01 *     0.09 f
+  mult_2_2/U498/ZN (ND2D1BWP16P90)                        0.01 *     0.10 r
+  mult_2_2/U358/ZN (ND3D2BWP16P90LVT)                     0.02 *     0.12 f
+  mult_2_2/U357/Z (XOR2D2BWP16P90LVT)                     0.03 *     0.15 r
+  mult_2_2/U524/Z (XOR2D2BWP16P90LVT)                     0.02 *     0.16 f
+  mult_2_2/U552/ZN (ND2D2BWP16P90LVT)                     0.01 *     0.17 r
+  mult_2_2/U567/ZN (CKND2BWP16P90LVT)                     0.01 *     0.18 f
+  mult_2_2/U573/ZN (AOI21D2BWP16P90LVT)                   0.01 *     0.19 r
+  mult_2_2/U577/ZN (OAI21D1BWP16P90LVT)                   0.01 *     0.20 f
+  mult_2_2/U589/ZN (AOI21D1BWP16P90LVT)                   0.01 *     0.21 r
+  mult_2_2/U626/ZN (OAI21D1BWP16P90LVT)                   0.01 *     0.22 f
+  mult_2_2/U537/Z (OR2D1BWP16P90LVT)                      0.01 *     0.24 f
+  mult_2_2/U613/ZN (ND2D1BWP16P90LVT)                     0.01 *     0.24 r
+  U25/ZN (MOAI22D1BWP16P90LVT)                            0.01 *     0.25 r
+  d[12] (out)                                             0.00       0.25 r
+  data arrival time                                                  0.25
+
+  max_delay                                               0.25       0.25
+  clock reconvergence pessimism                           0.00       0.25
+  output external delay                                   0.00       0.25
+  data required time                                                 0.25
+  ------------------------------------------------------------------------------
+  data required time                                                 0.25
+  data arrival time                                                 -0.25
+  ------------------------------------------------------------------------------
+  slack (VIOLATED: increase significant digits)                     -0.00
+
+Warning: report_timing has satisfied the max_paths criteria. There are 2 further endpoints which have paths of interest with slack less than     0.00 that were not considered when generating this report. (UITE-502)
+
+1

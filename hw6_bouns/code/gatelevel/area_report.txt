@@ -1,0 +1,134 @@
+ 
+****************************************
+Report : area
+Design : PE
+Version: T-2022.03
+Date   : Mon Dec 30 04:53:17 2024
+****************************************
+
+Library(s) Used:
+
+    sc9_cln40g_base_rvt_ss_typical_max_0p81v_125c (File: /cad/CBDK/CBDK_TSMC40_Arm_f2.0/CIC/SynopsysDC/db/sc9_base_rvt/sc9_cln40g_base_rvt_ss_typical_max_0p81v_125c.db)
+    USERLIB_nldm_tt_0p90v_0p90v_25c (File: /home/B103040045_HDL/hw6/code/mem_compiler/sram_4096x36m16_nldm_tt_0p90v_0p90v_25c_syn.db)
+
+Number of ports:                         6407
+Number of nets:                         22791
+Number of cells:                        13925
+Number of combinational cells:          11917
+Number of sequential cells:              1905
+Number of macros/black boxes:              13
+Number of buf/inv:                       1350
+Number of references:                      32
+
+Combinational area:              20393.402026
+Buf/Inv area:                      805.366807
+Noncombinational area:            8640.399172
+Macro/Black Box area:           925620.109375
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                954653.910572
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area               Local cell area
+                                  --------------------  ---------------------------------- 
+Hierarchical cell                 Absolute     Percent  Combi-      Noncombi-  Black-
+                                  Total        Total    national    national   boxes        Design
+--------------------------------  -----------  -------  ----------  ---------  -----------  ----------------------------------------
+PE                                954653.9106    100.0   1065.9600  2612.7359       0.0000  PE
+conv1                               4013.2259      0.4      4.0824   163.2960       0.0000  convolution_0
+conv1/add_0_root_add_318_8            85.9572      0.0     85.9572     0.0000       0.0000  convolution_0_DW01_add_0_DW01_add_24
+conv1/add_1_root_add_318_8            82.3284      0.0     82.3284     0.0000       0.0000  convolution_0_DW01_add_1_DW01_add_25
+conv1/add_2_root_add_318_8            78.6996      0.0     78.6996     0.0000       0.0000  convolution_0_DW01_add_2_DW01_add_26
+conv1/add_3_root_add_318_8            75.0708      0.0     75.0708     0.0000       0.0000  convolution_0_DW01_add_3_DW01_add_27
+conv1/add_4_root_add_318_8            71.4420      0.0     71.4420     0.0000       0.0000  convolution_0_DW01_add_4_DW01_add_28
+conv1/add_5_root_add_318_8            67.8132      0.0     67.8132     0.0000       0.0000  convolution_0_DW01_add_5_DW01_add_29
+conv1/add_6_root_add_318_8            64.1844      0.0     64.1844     0.0000       0.0000  convolution_0_DW01_add_6_DW01_add_30
+conv1/add_7_root_add_318_8            60.5556      0.0     60.5556     0.0000       0.0000  convolution_0_DW01_add_7_DW01_add_31
+conv1/mult_318                       362.1996      0.0    362.1996     0.0000       0.0000  convolution_0_DW_mult_tc_6_DW_mult_tc_27
+conv1/mult_318_2                     362.1996      0.0    362.1996     0.0000       0.0000  convolution_0_DW_mult_tc_5_DW_mult_tc_23
+conv1/mult_318_3                     362.1996      0.0    362.1996     0.0000       0.0000  convolution_0_DW_mult_tc_4_DW_mult_tc_19
+conv1/mult_318_4                     362.1996      0.0    362.1996     0.0000       0.0000  convolution_0_DW_mult_tc_3_DW_mult_tc_15
+conv1/mult_318_5                     362.1996      0.0    362.1996     0.0000       0.0000  convolution_0_DW_mult_tc_2_DW_mult_tc_11
+conv1/mult_318_6                     362.1996      0.0    362.1996     0.0000       0.0000  convolution_0_DW_mult_tc_1_DW_mult_tc_7
+conv1/mult_318_7                     362.1996      0.0    362.1996     0.0000       0.0000  convolution_0_DW_mult_tc_0_DW_mult_tc_3
+conv1/mult_318_8                     362.1996      0.0    362.1996     0.0000       0.0000  convolution_0_DW_mult_tc_8_DW_mult_tc_35
+conv1/mult_318_9                     362.1996      0.0    362.1996     0.0000       0.0000  convolution_0_DW_mult_tc_7_DW_mult_tc_31
+conv2                               4009.1435      0.4      4.0824   163.2960       0.0000  convolution_3
+conv2/add_0_root_add_318_8            85.9572      0.0     85.9572     0.0000       0.0000  convolution_3_DW01_add_0
+conv2/add_1_root_add_318_8            82.3284      0.0     82.3284     0.0000       0.0000  convolution_3_DW01_add_1
+conv2/add_2_root_add_318_8            78.6996      0.0     78.6996     0.0000       0.0000  convolution_3_DW01_add_2
+conv2/add_3_root_add_318_8            75.0708      0.0     75.0708     0.0000       0.0000  convolution_3_DW01_add_3
+conv2/add_4_root_add_318_8            71.4420      0.0     71.4420     0.0000       0.0000  convolution_3_DW01_add_4
+conv2/add_5_root_add_318_8            67.8132      0.0     67.8132     0.0000       0.0000  convolution_3_DW01_add_5
+conv2/add_6_root_add_318_8            64.1844      0.0     64.1844     0.0000       0.0000  convolution_3_DW01_add_6
+conv2/add_7_root_add_318_8            60.5556      0.0     60.5556     0.0000       0.0000  convolution_3_DW01_add_7
+conv2/mult_318                       361.7460      0.0    361.7460     0.0000       0.0000  convolution_3_DW_mult_tc_6_DW_mult_tc_24
+conv2/mult_318_2                     361.7460      0.0    361.7460     0.0000       0.0000  convolution_3_DW_mult_tc_5_DW_mult_tc_20
+conv2/mult_318_3                     361.7460      0.0    361.7460     0.0000       0.0000  convolution_3_DW_mult_tc_4_DW_mult_tc_16
+conv2/mult_318_4                     361.7460      0.0    361.7460     0.0000       0.0000  convolution_3_DW_mult_tc_3_DW_mult_tc_12
+conv2/mult_318_5                     361.7460      0.0    361.7460     0.0000       0.0000  convolution_3_DW_mult_tc_2_DW_mult_tc_8
+conv2/mult_318_6                     361.7460      0.0    361.7460     0.0000       0.0000  convolution_3_DW_mult_tc_1_DW_mult_tc_4
+conv2/mult_318_7                     361.7460      0.0    361.7460     0.0000       0.0000  convolution_3_DW_mult_tc_0
+conv2/mult_318_8                     361.7460      0.0    361.7460     0.0000       0.0000  convolution_3_DW_mult_tc_8_DW_mult_tc_32
+conv2/mult_318_9                     361.7460      0.0    361.7460     0.0000       0.0000  convolution_3_DW_mult_tc_7_DW_mult_tc_28
+conv3                               4009.1435      0.4      4.0824   163.2960       0.0000  convolution_2
+conv3/add_0_root_add_318_8            85.9572      0.0     85.9572     0.0000       0.0000  convolution_2_DW01_add_0_DW01_add_8
+conv3/add_1_root_add_318_8            82.3284      0.0     82.3284     0.0000       0.0000  convolution_2_DW01_add_1_DW01_add_9
+conv3/add_2_root_add_318_8            78.6996      0.0     78.6996     0.0000       0.0000  convolution_2_DW01_add_2_DW01_add_10
+conv3/add_3_root_add_318_8            75.0708      0.0     75.0708     0.0000       0.0000  convolution_2_DW01_add_3_DW01_add_11
+conv3/add_4_root_add_318_8            71.4420      0.0     71.4420     0.0000       0.0000  convolution_2_DW01_add_4_DW01_add_12
+conv3/add_5_root_add_318_8            67.8132      0.0     67.8132     0.0000       0.0000  convolution_2_DW01_add_5_DW01_add_13
+conv3/add_6_root_add_318_8            64.1844      0.0     64.1844     0.0000       0.0000  convolution_2_DW01_add_6_DW01_add_14
+conv3/add_7_root_add_318_8            60.5556      0.0     60.5556     0.0000       0.0000  convolution_2_DW01_add_7_DW01_add_15
+conv3/mult_318                       361.7460      0.0    361.7460     0.0000       0.0000  convolution_2_DW_mult_tc_6_DW_mult_tc_25
+conv3/mult_318_2                     361.7460      0.0    361.7460     0.0000       0.0000  convolution_2_DW_mult_tc_5_DW_mult_tc_21
+conv3/mult_318_3                     361.7460      0.0    361.7460     0.0000       0.0000  convolution_2_DW_mult_tc_4_DW_mult_tc_17
+conv3/mult_318_4                     361.7460      0.0    361.7460     0.0000       0.0000  convolution_2_DW_mult_tc_3_DW_mult_tc_13
+conv3/mult_318_5                     361.7460      0.0    361.7460     0.0000       0.0000  convolution_2_DW_mult_tc_2_DW_mult_tc_9
+conv3/mult_318_6                     361.7460      0.0    361.7460     0.0000       0.0000  convolution_2_DW_mult_tc_1_DW_mult_tc_5
+conv3/mult_318_7                     361.7460      0.0    361.7460     0.0000       0.0000  convolution_2_DW_mult_tc_0_DW_mult_tc_1
+conv3/mult_318_8                     361.7460      0.0    361.7460     0.0000       0.0000  convolution_2_DW_mult_tc_8_DW_mult_tc_33
+conv3/mult_318_9                     361.7460      0.0    361.7460     0.0000       0.0000  convolution_2_DW_mult_tc_7_DW_mult_tc_29
+conv4                               4009.1435      0.4      4.0824   163.2960       0.0000  convolution_1
+conv4/add_0_root_add_318_8            85.9572      0.0     85.9572     0.0000       0.0000  convolution_1_DW01_add_0_DW01_add_16
+conv4/add_1_root_add_318_8            82.3284      0.0     82.3284     0.0000       0.0000  convolution_1_DW01_add_1_DW01_add_17
+conv4/add_2_root_add_318_8            78.6996      0.0     78.6996     0.0000       0.0000  convolution_1_DW01_add_2_DW01_add_18
+conv4/add_3_root_add_318_8            75.0708      0.0     75.0708     0.0000       0.0000  convolution_1_DW01_add_3_DW01_add_19
+conv4/add_4_root_add_318_8            71.4420      0.0     71.4420     0.0000       0.0000  convolution_1_DW01_add_4_DW01_add_20
+conv4/add_5_root_add_318_8            67.8132      0.0     67.8132     0.0000       0.0000  convolution_1_DW01_add_5_DW01_add_21
+conv4/add_6_root_add_318_8            64.1844      0.0     64.1844     0.0000       0.0000  convolution_1_DW01_add_6_DW01_add_22
+conv4/add_7_root_add_318_8            60.5556      0.0     60.5556     0.0000       0.0000  convolution_1_DW01_add_7_DW01_add_23
+conv4/mult_318                       361.7460      0.0    361.7460     0.0000       0.0000  convolution_1_DW_mult_tc_6_DW_mult_tc_26
+conv4/mult_318_2                     361.7460      0.0    361.7460     0.0000       0.0000  convolution_1_DW_mult_tc_5_DW_mult_tc_22
+conv4/mult_318_3                     361.7460      0.0    361.7460     0.0000       0.0000  convolution_1_DW_mult_tc_4_DW_mult_tc_18
+conv4/mult_318_4                     361.7460      0.0    361.7460     0.0000       0.0000  convolution_1_DW_mult_tc_3_DW_mult_tc_14
+conv4/mult_318_5                     361.7460      0.0    361.7460     0.0000       0.0000  convolution_1_DW_mult_tc_2_DW_mult_tc_10
+conv4/mult_318_6                     361.7460      0.0    361.7460     0.0000       0.0000  convolution_1_DW_mult_tc_1_DW_mult_tc_6
+conv4/mult_318_7                     361.7460      0.0    361.7460     0.0000       0.0000  convolution_1_DW_mult_tc_0_DW_mult_tc_2
+conv4/mult_318_8                     361.7460      0.0    361.7460     0.0000       0.0000  convolution_1_DW_mult_tc_8_DW_mult_tc_34
+conv4/mult_318_9                     361.7460      0.0    361.7460     0.0000       0.0000  convolution_1_DW_mult_tc_7_DW_mult_tc_30
+lb                                  9296.7585      1.0   2277.7524  5374.4793       0.0000  LineBuffer
+lb/add_279                            70.0812      0.0     70.0812     0.0000       0.0000  LineBuffer_DW01_inc_0
+lb/rem_273                           755.2440      0.1    755.2440     0.0000       0.0000  LineBuffer_DW_div_tc_7
+lb/rem_273_2                         755.2440      0.1    755.2440     0.0000       0.0000  LineBuffer_DW_div_tc_13
+lb/sub_273                            63.9576      0.0     63.9576     0.0000       0.0000  LineBuffer_DW01_dec_0
+sram_bias1                         71202.9077      7.5      1.3608     0.0000   71201.5469  TOP_8
+sram_bias2                         71202.9077      7.5      1.3608     0.0000   71201.5469  TOP_7
+sram_bias3                         71202.9077      7.5      1.3608     0.0000   71201.5469  TOP_6
+sram_bias4                         71202.9077      7.5      1.3608     0.0000   71201.5469  TOP_5
+sram_conv1                         71202.9077      7.5      1.3608     0.0000   71201.5469  TOP_4
+sram_conv2                         71202.9077      7.5      1.3608     0.0000   71201.5469  TOP_3
+sram_conv3                         71202.9077      7.5      1.3608     0.0000   71201.5469  TOP_2
+sram_conv4                         71202.9077      7.5      1.3608     0.0000   71201.5469  TOP_1
+sram_img_r                         71202.9077      7.5      1.3608     0.0000   71201.5469  TOP_0
+sram_weight1                       71202.9077      7.5      1.3608     0.0000   71201.5469  TOP_12
+sram_weight2                       71202.9077      7.5      1.3608     0.0000   71201.5469  TOP_11
+sram_weight3                       71202.9077      7.5      1.3608     0.0000   71201.5469  TOP_10
+sram_weight4                       71202.9077      7.5      1.3608     0.0000   71201.5469  TOP_9
+--------------------------------  -----------  -------  ----------  ---------  -----------  ----------------------------------------
+Total                                                   20393.4020  8640.3992  925620.1094
+
+1

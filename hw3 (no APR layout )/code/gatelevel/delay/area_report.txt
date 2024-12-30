@@ -1,0 +1,73 @@
+ 
+****************************************
+Report : area
+Design : thumb
+Version: V-2023.12
+Date   : Mon Nov 11 20:00:50 2024
+****************************************
+
+Library(s) Used:
+
+    N16ADFP_StdCellss0p72vm40c_ccs (File: /cad/CBDK/ADFP/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.db)
+
+Number of ports:                         3544
+Number of nets:                         18318
+Number of cells:                        14632
+Number of combinational cells:          13865
+Number of sequential cells:               737
+Number of macros/black boxes:               0
+Number of buf/inv:                       3186
+Number of references:                      15
+
+Combinational area:               4767.621234
+Buf/Inv area:                      645.667216
+Noncombinational area:             816.894747
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  5584.515981
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ---------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  ----------------------
+thumb                             5584.5160    100.0    28.4083     0.0000  0.0000  thumb
+stage1                             143.8560      2.6    24.0019    91.8605  0.0000  IF_stage
+stage1/r363                         27.9936      0.5    27.9936     0.0000  0.0000  IF_stage_DW01_add_2
+stage2                             655.2576     11.7   481.9047   173.3530  0.0000  ID_stage
+stage3                            4267.7799     76.4  2215.1233   233.1763  0.0000  ex_stage
+stage3/add_0_root_add_710_2         55.2614      1.0    55.2614     0.0000  0.0000  ex_stage_DW01_add_42
+stage3/add_1_root_add_659_2         65.9405      1.2    65.9405     0.0000  0.0000  ex_stage_DW01_add_19
+stage3/add_660                      35.6141      0.6    35.6141     0.0000  0.0000  ex_stage_DW01_add_36
+stage3/add_661                      44.1158      0.8    44.1158     0.0000  0.0000  ex_stage_DW01_add_35
+stage3/add_719_2                    54.6394      1.0    54.6394     0.0000  0.0000  ex_stage_DW01_add_43
+stage3/add_728                      29.2378      0.5    29.2378     0.0000  0.0000  ex_stage_DW01_add_40
+stage3/add_731                      43.6493      0.8    43.6493     0.0000  0.0000  ex_stage_DW01_add_37
+stage3/add_770                      30.8448      0.6    30.8448     0.0000  0.0000  ex_stage_DW01_add_28
+stage3/mult_763                    797.9731     14.3   797.9731     0.0000  0.0000  ex_stage_DW_mult_uns_1
+stage3/r919                         65.1629      1.2    65.1629     0.0000  0.0000  ex_stage_DW01_add_15
+stage3/r920                         36.9101      0.7    36.9101     0.0000  0.0000  ex_stage_DW01_add_38
+stage3/r921                         38.2579      0.7    38.2579     0.0000  0.0000  ex_stage_DW01_add_34
+stage3/r985                         27.6826      0.5    27.6826     0.0000  0.0000  ex_stage_DW01_add_41
+stage3/r990                         45.5674      0.8    45.5674     0.0000  0.0000  ex_stage_DW01_sub_13
+stage3/r991                         70.0358      1.3    70.0358     0.0000  0.0000  ex_stage_DW01_sub_12
+stage3/r992                         40.7981      0.7    40.7981     0.0000  0.0000  ex_stage_DW01_add_23
+stage3/r993                         37.7395      0.7    37.7395     0.0000  0.0000  ex_stage_DW01_add_32
+stage3/r994                         37.8432      0.7    37.8432     0.0000  0.0000  ex_stage_DW01_add_33
+stage3/sub_0_root_sub_0_root_sub_789_2   67.1846     1.2   67.1846    0.0000 0.0000 ex_stage_DW01_sub_26
+stage3/sub_1_root_sub_0_root_sub_789_2   35.5104     0.6   35.5104    0.0000 0.0000 ex_stage_DW01_sub_25
+stage3/sub_765                      35.6141      0.6    35.6141     0.0000  0.0000  ex_stage_DW01_sub_11
+stage3/sub_775                      27.2678      0.5    27.2678     0.0000  0.0000  ex_stage_DW01_sub_15
+stage3/sub_797                      33.5405      0.6    33.5405     0.0000  0.0000  ex_stage_DW01_sub_14
+stage3/sub_800                      35.8733      0.6    35.8733     0.0000  0.0000  ex_stage_DW01_sub_16
+stage3/sub_803                      27.2160      0.5    27.2160     0.0000  0.0000  ex_stage_DW01_sub_17
+stage4                             489.2141      8.8   170.7091   318.5050  0.0000  wb_stage
+--------------------------------  ---------  -------  ---------  ---------  ------  ----------------------
+Total                                                 4767.6212   816.8947  0.0000
+
+1

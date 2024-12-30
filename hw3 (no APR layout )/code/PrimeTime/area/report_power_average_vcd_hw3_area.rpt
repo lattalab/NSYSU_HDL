@@ -1,0 +1,49 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : thumb
+Version: V-2023.12
+Date   : Mon Nov 11 10:52:19 2024
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+thumb                                 2.41e-05 7.46e-06 2.98e-06 3.45e-05 100.0
+  stage1 (IF_stage)                   2.22e-06 3.64e-07 1.08e-07 2.69e-06   7.8
+    r363 (IF_stage_DW01_add_0_DW01_add_15)
+                                      1.16e-08 5.15e-09 1.99e-08 3.67e-08   0.1
+  stage2 (ID_stage)                   5.86e-06 3.23e-06 4.82e-07 9.56e-06  27.7
+  stage3 (ex_stage)                   9.20e-06 3.37e-06 2.08e-06 1.47e-05  42.4
+    add_657 (ex_stage_DW01_add_6)     2.03e-08 7.77e-09 2.03e-08 4.84e-08   0.1
+    add_658 (ex_stage_DW01_add_5)     3.65e-08 1.12e-08 2.21e-08 6.98e-08   0.2
+    add_727 (ex_stage_DW01_add_2)     3.74e-08 1.15e-08 1.53e-08 6.42e-08   0.2
+    add_730 (ex_stage_DW01_add_1)     1.50e-08 1.05e-08 2.26e-08 4.81e-08   0.1
+    sub_764 (ex_stage_DW01_sub_3)     1.64e-09 1.75e-09 2.41e-08 2.75e-08   0.1
+    add_769 (ex_stage_DW01_add_0)     2.14e-09 1.51e-09 2.38e-08 2.75e-08   0.1
+    sub_774 (ex_stage_DW01_sub_2)     1.90e-09 1.48e-09 2.07e-08 2.40e-08   0.1
+    sub_796 (ex_stage_DW01_sub_1)     4.32e-08 2.31e-08 2.35e-08 8.98e-08   0.3
+    add_718_2 (ex_stage_DW01_add_3)   1.47e-07 3.73e-08 1.99e-08 2.04e-07   0.6
+    sub_802 (ex_stage_DW01_sub_0)     5.68e-08 3.69e-08 2.25e-08 1.16e-07   0.3
+    mult_762 (ex_stage_DW_mult_uns_0) 1.25e-07 7.48e-08 1.59e-07 3.60e-07   1.0
+    r919 (ex_stage_DW01_add_14)       1.91e-08 1.81e-08 1.92e-08 5.64e-08   0.2
+    r920 (ex_stage_DW01_add_13)       4.95e-08 2.41e-08 1.91e-08 9.27e-08   0.3
+    r921 (ex_stage_DW01_add_12)       1.62e-08 1.02e-08 2.10e-08 4.73e-08   0.1
+    sub_1_root_sub_0_root_sub_788_2 (ex_stage_DW01_sub_7)
+                                      3.55e-09 4.56e-09 2.28e-08 3.09e-08   0.1
+    r985 (ex_stage_DW01_add_11)       5.22e-09 1.82e-08 2.01e-08 4.35e-08   0.1
+    r990 (ex_stage_DW01_sub_5)        1.57e-07 6.97e-08 2.50e-08 2.52e-07   0.7
+    r991 (ex_stage_DW01_sub_4)        1.58e-08 1.04e-08 2.05e-08 4.67e-08   0.1
+    r992 (ex_stage_DW01_add_10)       4.20e-08 2.08e-08 1.99e-08 8.27e-08   0.2
+    r993 (ex_stage_DW01_add_9)        3.71e-08 2.53e-08 2.11e-08 8.35e-08   0.2
+    r994 (ex_stage_DW01_add_8)        4.20e-08 2.82e-08 2.07e-08 9.09e-08   0.3
+    sub_0_root_sub_0_root_sub_788_2 (ex_stage_DW01_sub_6)
+                                      1.20e-08 2.70e-09 2.10e-08 3.57e-08   0.1
+    add_0_root_add_709_2 (ex_stage_DW01_add_4)
+                                      5.90e-08 4.18e-08 1.89e-08 1.20e-07   0.3
+    add_1_root_add_656_2 (ex_stage_DW01_add_7)
+                                      1.56e-08 4.30e-09 1.77e-08 3.76e-08   0.1
+  stage4 (thumb_wb)                   6.81e-06 4.16e-07 3.01e-07 7.53e-06  21.8
+1

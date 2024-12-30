@@ -1,0 +1,119 @@
+3:53:42 AM - ARM Physical IP, Inc.
+3:53:42 AM - Linux DTrump 3.10.0-1160.119.1.el7.x86_64 #1 SMP Tue Jun 4 14:43:51 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+3:53:42 AM - Version r11p2
+3:53:42 AM - GUI version 7.0.18
+3:53:42 AM - 
+3:53:42 AM - CONFIDENTIAL AND PROPRIETARY SOFTWARE OF ARM PHYSICAL IP, INC.
+3:53:42 AM - 
+3:53:42 AM - Copyright (c) 1993 - 2024 ARM Physical IP, Inc.  All Rights Reserved.
+3:53:42 AM - 
+3:53:42 AM - Use of this Software is subject to the terms and conditions of the
+3:53:42 AM - applicable license agreement with ARM Physical IP, Inc. 
+3:53:42 AM - In addition, this Software is protected by patents, copyright law 
+3:53:42 AM - and international treaties.
+3:53:42 AM - 
+3:53:42 AM - The copyright notice(s) in this Software does not indicate actual or
+3:53:42 AM - intended publication of this Software.
+3:53:42 AM - 
+3:53:42 AM - High Density Single Port SRAM RVT-HVT-RVT Compiler, CLN40G 40nm Process, 256 Rows Per Bank, 0.299um^2 Bit Cell
+3:53:42 AM - 
+3:53:42 AM - Log file is ACI.log
+3:53:42 AM - 
+3:56:55 AM - 
+3:56:55 AM - *** Error *** An instance name ("sram_sp_hde_4096x36m16") of more than 16 characters may create cellnames 
+3:56:55 AM - *** Error *** that exceed the number of characters supported by some tools.
+3:56:55 AM - *** Error *** To disable this check, set "Check Instance Name" to off.
+3:56:55 AM - 
+3:56:55 AM - *** Error *** An instance name ("sram_sp_hde_4096x36m16") of more than 16 characters may create cellnames 
+3:56:55 AM - *** Error *** that exceed the number of characters supported by some tools.
+3:56:55 AM - *** Error *** To disable this check, set "Check Instance Name" to off.
+3:56:55 AM - 
+3:56:55 AM - *** Error *** An instance name ("sram_sp_hde_4096x36m16") of more than 16 characters may create cellnames 
+3:56:55 AM - *** Error *** that exceed the number of characters supported by some tools.
+3:56:55 AM - *** Error *** To disable this check, set "Check Instance Name" to off.
+3:56:56 AM - 
+3:56:56 AM - *** Error *** An instance name ("sram_sp_hde_4096x36m16") of more than 16 characters may create cellnames 
+3:56:56 AM - *** Error *** that exceed the number of characters supported by some tools.
+3:56:56 AM - *** Error *** To disable this check, set "Check Instance Name" to off.
+3:56:56 AM - 
+3:56:56 AM - *** Error *** An instance name ("sram_sp_hde_4096x36m16") of more than 16 characters may create cellnames 
+3:56:56 AM - *** Error *** that exceed the number of characters supported by some tools.
+3:56:56 AM - *** Error *** To disable this check, set "Check Instance Name" to off.
+3:56:56 AM - 
+3:56:56 AM - *** Error *** An instance name ("sram_sp_hde_4096x36m16") of more than 16 characters may create cellnames 
+3:56:56 AM - *** Error *** that exceed the number of characters supported by some tools.
+3:56:56 AM - *** Error *** To disable this check, set "Check Instance Name" to off.
+3:56:56 AM - 
+3:56:56 AM - *** Error *** An instance name ("sram_sp_hde_4096x36m16") of more than 16 characters may create cellnames 
+3:56:56 AM - *** Error *** that exceed the number of characters supported by some tools.
+3:56:56 AM - *** Error *** To disable this check, set "Check Instance Name" to off.
+3:56:56 AM - 
+3:56:56 AM - *** Error *** An instance name ("sram_sp_hde_4096x36m16") of more than 16 characters may create cellnames 
+3:56:56 AM - *** Error *** that exceed the number of characters supported by some tools.
+3:56:56 AM - *** Error *** To disable this check, set "Check Instance Name" to off.
+3:56:57 AM - 
+3:56:57 AM - *** Error *** An instance name ("sram_sp_hde_4096x36m16") of more than 16 characters may create cellnames 
+3:56:57 AM - *** Error *** that exceed the number of characters supported by some tools.
+3:56:57 AM - *** Error *** To disable this check, set "Check Instance Name" to off.
+3:56:57 AM - 
+3:56:57 AM - *** Error *** An instance name ("sram_sp_hde_4096x36m16") of more than 16 characters may create cellnames 
+3:56:57 AM - *** Error *** that exceed the number of characters supported by some tools.
+3:56:57 AM - *** Error *** To disable this check, set "Check Instance Name" to off.
+3:56:58 AM - 
+3:56:58 AM - *** Error *** An instance name ("sram_sp_hde_4096x36m16") of more than 16 characters may create cellnames 
+3:56:58 AM - *** Error *** that exceed the number of characters supported by some tools.
+3:56:58 AM - *** Error *** To disable this check, set "Check Instance Name" to off.
+3:56:58 AM - 
+3:56:58 AM - *** Error *** An instance name ("sram_sp_hde_4096x36m16") of more than 16 characters may create cellnames 
+3:56:58 AM - *** Error *** that exceed the number of characters supported by some tools.
+3:56:58 AM - *** Error *** To disable this check, set "Check Instance Name" to off.
+4:02:57 AM - 
+4:02:57 AM - *** Error *** An instance name ("sram_sp_hde_4096x36m16") of more than 16 characters may create cellnames 
+4:02:57 AM - *** Error *** that exceed the number of characters supported by some tools.
+4:02:57 AM - *** Error *** To disable this check, set "Check Instance Name" to off.
+4:03:54 AM - 
+4:03:54 AM - *** Error *** An instance name ("sram_sp_hde_4096x36m16") of more than 16 characters may create cellnames 
+4:03:54 AM - *** Error *** that exceed the number of characters supported by some tools.
+4:03:54 AM - *** Error *** To disable this check, set "Check Instance Name" to off.
+4:03:59 AM - 
+4:03:59 AM - *** Error *** An instance name ("sram_sp_hde_4096x36m16") of more than 16 characters may create cellnames 
+4:03:59 AM - *** Error *** that exceed the number of characters supported by some tools.
+4:03:59 AM - *** Error *** To disable this check, set "Check Instance Name" to off.
+4:04:50 AM - 
+4:04:50 AM - *** Error *** An instance name ("sram_sp_hde_4096x64m16") of more than 16 characters may create cellnames 
+4:04:50 AM - *** Error *** that exceed the number of characters supported by some tools.
+4:04:50 AM - *** Error *** To disable this check, set "Check Instance Name" to off.
+4:04:54 AM - 
+4:04:54 AM - *** Error *** An instance name ("sram_sp_hde_4096x64m16") of more than 16 characters may create cellnames 
+4:04:54 AM - *** Error *** that exceed the number of characters supported by some tools.
+4:04:54 AM - *** Error *** To disable this check, set "Check Instance Name" to off.
+4:05:09 AM - 
+4:05:09 AM - *** Error *** An instance name ("sram_sp_hde_4096x64m16") of more than 16 characters may create cellnames 
+4:05:09 AM - *** Error *** that exceed the number of characters supported by some tools.
+4:05:09 AM - *** Error *** To disable this check, set "Check Instance Name" to off.
+4:05:13 AM - 
+4:05:13 AM - *** Error *** An instance name ("sram_sp_hde_4096x64m16") of more than 16 characters may create cellnames 
+4:05:13 AM - *** Error *** that exceed the number of characters supported by some tools.
+4:05:13 AM - *** Error *** To disable this check, set "Check Instance Name" to off.
+4:05:24 AM - 
+4:05:24 AM - *** Error *** ascii: -bits option out of range, 64, 4:05:24 AM - must be within 4 and 36
+
+4:05:54 AM - *** Error *** An instance name ("sram_sp_hde_4096x64m16") of more than 16 characters may create cellnames 
+4:05:54 AM - *** Error *** that exceed the number of characters supported by some tools.
+4:05:54 AM - *** Error *** To disable this check, set "Check Instance Name" to off.
+4:06:24 AM - 
+4:06:24 AM - *** Error *** An instance name ("sram_sp_hde_4096x64m16") of more than 16 characters may create cellnames 
+4:06:24 AM - *** Error *** that exceed the number of characters supported by some tools.
+4:06:24 AM - *** Error *** To disable this check, set "Check Instance Name" to off.
+4:07:13 AM - ASCII Datatable updated
+4:07:35 AM - ASCII Datatable updated
+4:07:48 AM - command: /cad/CBDK/CBDK_TSMC40_Arm_f2.0/CIC/Memory/sram_sp_hde_rvt_hvt_rvt/r11p2/bin/sram_sp_hde_rvt_hvt_rvt verilog -instname "sram_4096x36m16" -words 4096 -bits 36 -frequency 1 -mux 16 -pipeline off -write_mask off -wp_size 1 -write_thru on -top_layer "m5-m9" -power_type otc -redundancy off -rcols 2 -rrows 4 -bmux on -ser none -power_gating off -retention on -ema on -atf off -cust_comment "" -bus_notation on -left_bus_delim "[" -right_bus_delim "]" -pwr_gnd_rename "vddpe:VDDPE,vddce:VDDCE,vsse:VSSE" -prefix "" -name_case upper -rows_p_bl 256 -check_instname on -diodes on -drive 6 -dnw off -corners ss_0p81v_0p81v_125c,ss_0p81v_0p81v_m40c,ffg_0p99v_0p99v_125c,ff_0p99v_0p99v_125c,ff_0p99v_0p99v_m40c,tt_0p90v_0p90v_25c
+4:07:49 AM - Verilog Model generator succeeded, created: sram_4096x36m16.v
+4:08:42 AM - command: /cad/CBDK/CBDK_TSMC40_Arm_f2.0/CIC/Memory/sram_sp_hde_rvt_hvt_rvt/r11p2/bin/sram_sp_hde_rvt_hvt_rvt synopsys -instname "sram_4096x36m16" -words 4096 -bits 36 -frequency 1 -mux 16 -pipeline off -write_mask off -wp_size 1 -write_thru on -top_layer "m5-m9" -power_type otc -redundancy off -rcols 2 -rrows 4 -bmux on -ser none -power_gating off -retention on -ema on -atf off -cust_comment "" -bus_notation on -left_bus_delim "[" -right_bus_delim "]" -pwr_gnd_rename "vddpe:VDDPE,vddce:VDDCE,vsse:VSSE" -prefix "" -name_case upper -rows_p_bl 256 -check_instname on -diodes on -drive 6 -dnw off -libname USERLIB -nldm on -ccs off -ecsm off -corners ss_0p81v_0p81v_125c,ss_0p81v_0p81v_m40c,ffg_0p99v_0p99v_125c,ff_0p99v_0p99v_125c,ff_0p99v_0p99v_m40c,tt_0p90v_0p90v_25c
+4:11:09 AM - Synopsys Model generator succeeded, created:
+4:11:09 AM -    sram_4096x36m16_nldm_ss_0p81v_0p81v_125c_syn.lib
+4:11:09 AM -    sram_4096x36m16_nldm_ss_0p81v_0p81v_m40c_syn.lib
+4:11:09 AM -    sram_4096x36m16_nldm_ffg_0p99v_0p99v_125c_syn.lib
+4:11:09 AM -    sram_4096x36m16_nldm_ff_0p99v_0p99v_125c_syn.lib
+4:11:09 AM -    sram_4096x36m16_nldm_ff_0p99v_0p99v_m40c_syn.lib
+4:11:09 AM -    sram_4096x36m16_nldm_tt_0p90v_0p90v_25c_syn.lib

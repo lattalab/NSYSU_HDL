@@ -1,0 +1,53 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : thumb
+Version: V-2023.12
+Date   : Mon Nov 11 10:54:34 2024
+****************************************
+
+
+  Startpoint: reset_n (input port clocked by clk)
+  Endpoint: stage3/EX_ALU_out_reg_28_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.20       0.20
+  input external delay                                    0.52       0.72 r
+  reset_n (in)                                            0.00       0.72 r
+  U104/Z (BUFFD1BWP16P90LVT)                              0.11 *     0.83 r
+  stage3/U3274/Z (BUFFD1BWP16P90LVT)                      0.03 *     0.86 r
+  stage3/U2736/ZN (CKND1BWP16P90LVT)                      0.03 *     0.89 f
+  stage3/U3273/ZN (NR2D1BWP16P90LVT)                      0.05 *     0.94 r
+  stage3/U3287/ZN (OAI21D1BWP16P90LVT)                    0.11 *     1.05 f
+  stage3/U3286/ZN (CKND1BWP16P90LVT)                      0.02 *     1.07 r
+  stage3/U2768/ZN (OAI31D1BWP16P90LVT)                    0.05 *     1.12 f
+  stage3/U2767/Z (BUFFD1BWP16P90LVT)                      0.04 *     1.16 f
+  stage3/U2235/ZN (CKND1BWP16P90LVT)                      0.02 *     1.18 r
+  stage3/U3597/ZN (AOI22D1BWP16P90LVT)                    0.01 *     1.19 f
+  stage3/U202/ZN (IOA21D1BWP16P90LVT)                     0.01 *     1.20 r
+  stage3/EX_ALU_out_reg_28_/D (DFQD2BWP16P90LVT)          0.00 *     1.20 r
+  data arrival time                                                  1.20
+
+  clock clk (rise edge)                                   1.72       1.72
+  clock network delay (ideal)                             0.20       1.92
+  clock reconvergence pessimism                           0.00       1.92
+  clock uncertainty                                      -0.02       1.90
+  stage3/EX_ALU_out_reg_28_/CP (DFQD2BWP16P90LVT)                    1.90 r
+  library setup time                                     -0.00 *     1.89
+  data required time                                                 1.89
+  ------------------------------------------------------------------------------
+  data required time                                                 1.89
+  data arrival time                                                 -1.20
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        0.70
+
+
+1

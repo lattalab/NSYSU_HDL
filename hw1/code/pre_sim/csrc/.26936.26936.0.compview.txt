@@ -1,5 +1,0 @@
-{"vcs1":{"timestamp_begin":1727785899.448940504, "rt":0.41, "ut":0.12, "st":0.09}}
-{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1727785898.720416520}
-{"VCS_COMP_START_TIME": 1727785898.720416520}
-{"VCS_COMP_END_TIME": 1727785901.607709310}
-{"VCS_USER_OPTIONS": "-R -debug_access+all /home/B103040045_HDL/hw1/code/pre_sim/pre_tb.v /home/B103040045_HDL/hw1/code/rtl/adder_behavior.v /home/B103040045_HDL/hw1/code/rtl/adder_dataflow.v /home/B103040045_HDL/hw1/code/rtl/adder_structure.v /home/B103040045_HDL/hw1/code/rtl/adder_behavior_reg.v /home/B103040045_HDL/hw1/code/rtl/adder_dataflow_reg.v /home/B103040045_HDL/hw1/code/rtl/adder_structure_reg.v +full64 +access+r +vcs+fsdbon +fsdb+mda +fsdbfile+6adder.fsdb +v2k"}

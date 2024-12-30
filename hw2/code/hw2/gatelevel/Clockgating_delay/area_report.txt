@@ -1,0 +1,52 @@
+ 
+****************************************
+Report : area
+Design : hw2_clockgating
+Version: V-2023.12
+Date   : Mon Oct 21 02:17:55 2024
+****************************************
+
+Library(s) Used:
+
+    N16ADFP_StdCellss0p72vm40c_ccs (File: /cad/CBDK/ADFP/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.db)
+
+Number of ports:                          254
+Number of nets:                           693
+Number of cells:                          432
+Number of combinational cells:            397
+Number of sequential cells:                26
+Number of macros/black boxes:               0
+Number of buf/inv:                         64
+Number of references:                       2
+
+Combinational area:                155.675522
+Buf/Inv area:                       11.871360
+Noncombinational area:              29.030401
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                   184.705923
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ---------------------------------------------
+hw2_clockgating                    184.7059    100.0    0.0000     0.0000  0.0000  hw2_clockgating
+s1                                  32.5555     17.6    4.9766     0.0000  0.0000  stage1_gating
+s1/add_21                            7.9834      4.3    7.9834     0.0000  0.0000  stage1_gating_DW01_add_0
+s1/dff1                             10.3680      5.6    0.4147     9.1238  0.0000  D_FF_gating_DATA_WIDTH8
+s1/dff1/clk_gate_C29                 0.8294      0.4    0.0000     0.8294  0.0000  SNPS_CLOCK_GATE_HIGH_D_FF_gating_DATA_WIDTH8
+s1/sub_24                            9.2275      5.0    9.2275     0.0000  0.0000  stage1_gating_DW01_sub_0
+s2                                 152.1504     82.4    0.8294     0.0000  0.0000  stage2_gating
+s2/dff2                             19.4918     10.6    0.4147    18.2477  0.0000  D_FF_gating_DATA_WIDTH16
+s2/dff2/clk_gate_C45                 0.8294      0.4    0.0000     0.8294  0.0000  SNPS_CLOCK_GATE_HIGH_D_FF_gating_DATA_WIDTH16
+s2/mult_37                         131.8291     71.4  131.8291     0.0000  0.0000  stage2_gating_DW_mult_uns_2
+--------------------------------  ---------  -------  --------  ---------  ------  ---------------------------------------------
+Total                                                 155.6755    29.0304  0.0000
+
+1

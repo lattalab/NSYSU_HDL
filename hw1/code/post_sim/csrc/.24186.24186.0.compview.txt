@@ -1,9 +1,0 @@
-{"vcs1":{"timestamp_begin":1727942446.843330450, "rt":6.39, "ut":4.89, "st":1.25}}
-{"vcselab":{"timestamp_begin":1727942453.337351695, "rt":0.84, "ut":0.51, "st":0.08}}
-{"link":{"timestamp_begin":1727942454.254304770, "rt":0.90, "ut":0.54, "st":0.38}}
-{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1727942446.121074160}
-{"VCS_COMP_START_TIME": 1727942446.121074160}
-{"VCS_COMP_END_TIME": 1727942457.084470024}
-{"VCS_USER_OPTIONS": "-R -error=noMPD -debug_access+all /home/B103040045_HDL/hw1/code/post_sim/post_syn_testbench.v /home/B103040045_HDL/hw1/code/gatelevel/adder_behavior_delay/adder_behavior_delay.v /home/B103040045_HDL/hw1/code/gatelevel/adder_dataflow_delay/adder_dataflow_delay.v /home/B103040045_HDL/hw1/code/gatelevel/adder_structure_delay/adder_structure_delay.v /home/B103040045_HDL/hw1/code/gatelevel/adder_behavior_reg_delay/adder_behavior_reg_delay.v /home/B103040045_HDL/hw1/code/gatelevel/adder_dataflow_reg_delay/adder_dataflow_reg_delay.v /home/B103040045_HDL/hw1/code/gatelevel/adder_structure_reg_delay/adder_structure_reg_delay.v /cad/CBDK/ADFP/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/VERILOG/N16ADFP_StdCell.v +full64 +access+r +vcs+fsdbon +fsdb+mda +fsdbfile+6adder.fsdb +neg_tchk"}
-{"vcs1": {"peak_mem": 298288}}
-{"vcselab": {"peak_mem": 159588}}

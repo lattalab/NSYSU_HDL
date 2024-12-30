@@ -1,0 +1,94 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : sobel_detecter
+Version: T-2022.03
+Date   : Mon Dec  2 01:57:31 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss0p72vm40c   Library: N16ADFP_StdCellss0p72vm40c_ccs
+Wire Load Model Mode: top
+
+  Startpoint: LineBuffer/buffer_reg_0__0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: x[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sobel_detecter     ZeroWireload          N16ADFP_StdCellss0p72vm40c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  LineBuffer/buffer_reg_0__0_/CP (DFCNQD2BWP16P90LVT) 0.000000 # 0.000000 r
+  LineBuffer/buffer_reg_0__0_/Q (DFCNQD2BWP16P90LVT)  0.042314   0.042314 f
+  LineBuffer/R0[0] (LineBuffer)                       0.000000   0.042314 f
+  sobel_conv/R0[0] (sobel_conv)                       0.000000   0.042314 f
+  sobel_conv/sub_143/B[0] (sobel_conv_DW01_sub_6_DW01_sub_7)
+                                                      0.000000   0.042314 f
+  sobel_conv/sub_143/U5/ZN (CKND1BWP16P90LVT)         0.009720   0.052034 r
+  sobel_conv/sub_143/U3/Z (OR2D1BWP16P90LVT)          0.013921   0.065955 r
+  sobel_conv/sub_143/U2_1/CO (FA1D1BWP16P90LVT)       0.021417   0.087372 r
+  sobel_conv/sub_143/U2_2/S (FA1D1BWP16P90LVT)        0.038368   0.125741 f
+  sobel_conv/sub_143/DIFF[2] (sobel_conv_DW01_sub_6_DW01_sub_7)
+                                                      0.000000   0.125741 f
+  sobel_conv/sub_143_2/A[2] (sobel_conv_DW01_sub_5_DW01_sub_6)
+                                                      0.000000   0.125741 f
+  sobel_conv/sub_143_2/U2_2/S (FA1D1BWP16P90LVT)      0.043328   0.169069 r
+  sobel_conv/sub_143_2/DIFF[2] (sobel_conv_DW01_sub_5_DW01_sub_6)
+                                                      0.000000   0.169069 r
+  sobel_conv/add_143/A[2] (sobel_conv_DW01_add_1_DW01_add_5)
+                                                      0.000000   0.169069 r
+  sobel_conv/add_143/U1_2/S (FA1D1BWP16P90LVT)        0.039781   0.208850 f
+  sobel_conv/add_143/SUM[2] (sobel_conv_DW01_add_1_DW01_add_5)
+                                                      0.000000   0.208850 f
+  sobel_conv/sub_143_3/A[2] (sobel_conv_DW01_sub_4)   0.000000   0.208850 f
+  sobel_conv/sub_143_3/U2_2/CO (FA1D1BWP16P90LVT)     0.027662   0.236512 f
+  sobel_conv/sub_143_3/U2_3/CO (FA1D1BWP16P90LVT)     0.027625   0.264136 f
+  sobel_conv/sub_143_3/U2_4/CO (FA1D1BWP16P90LVT)     0.027625   0.291761 f
+  sobel_conv/sub_143_3/U2_5/CO (FA1D1BWP16P90LVT)     0.027625   0.319386 f
+  sobel_conv/sub_143_3/U2_6/CO (FA1D1BWP16P90LVT)     0.027625   0.347011 f
+  sobel_conv/sub_143_3/U2_7/S (FA1D1BWP16P90LVT)      0.042923   0.389934 r
+  sobel_conv/sub_143_3/DIFF[7] (sobel_conv_DW01_sub_4)
+                                                      0.000000   0.389934 r
+  sobel_conv/add_143_2/A[7] (sobel_conv_DW01_add_0)   0.000000   0.389934 r
+  sobel_conv/add_143_2/U1_7/CO (FA1D1BWP16P90LVT)     0.023428   0.413362 r
+  sobel_conv/add_143_2/U11/Z (AN2D1BWP16P90LVT)       0.014848   0.428210 r
+  sobel_conv/add_143_2/U9/Z (AN2D1BWP16P90LVT)        0.014448   0.442658 r
+  sobel_conv/add_143_2/U7/Z (AN2D1BWP16P90LVT)        0.014448   0.457106 r
+  sobel_conv/add_143_2/U3/Z (AN2D1BWP16P90LVT)        0.014448   0.471554 r
+  sobel_conv/add_143_2/U1/Z (AN2D1BWP16P90LVT)        0.012399   0.483953 r
+  sobel_conv/add_143_2/U4/Z (XOR2D1BWP16P90LVT)       0.054811   0.538764 f
+  sobel_conv/add_143_2/SUM[13] (sobel_conv_DW01_add_0)
+                                                      0.000000   0.538764 f
+  sobel_conv/U9/ZN (CKND1BWP16P90LVT)                 0.054749   0.593513 r
+  sobel_conv/U114/Z (XOR2D1BWP16P90)                  0.037562   0.631075 f
+  sobel_conv/U22/ZN (AOI22D1BWP16P90LVT)              0.012365   0.643440 r
+  sobel_conv/U19/ZN (ND3D1BWP16P90LVT)                0.012532   0.655973 f
+  sobel_conv/U81/ZN (NR4D1BWP16P90LVT)                0.012625   0.668597 r
+  sobel_conv/U82/ZN (OAI32D1BWP16P90LVT)              0.007245   0.675843 f
+  sobel_conv/x[0] (sobel_conv)                        0.000000   0.675843 f
+  x[0] (out)                                          0.000000   0.675843 f
+  data arrival time                                              0.675843
+
+  clock clk (rise edge)                               0.707270   0.707270
+  clock network delay (ideal)                         0.000000   0.707270
+  output external delay                               0.000000   0.707270
+  data required time                                             0.707270
+  --------------------------------------------------------------------------
+  data required time                                             0.707270
+  data arrival time                                              -0.675843
+  --------------------------------------------------------------------------
+  slack (MET)                                                    0.031427
+
+
+1

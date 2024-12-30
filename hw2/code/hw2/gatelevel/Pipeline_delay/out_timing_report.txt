@@ -1,0 +1,47 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : hw2_pipe
+Version: V-2023.12
+Date   : Mon Oct 21 02:00:31 2024
+****************************************
+
+Operating Conditions: ss0p72vm40c   Library: N16ADFP_StdCellss0p72vm40c_ccs
+Wire Load Model Mode: top
+
+  Startpoint: s2/dff2/q_reg_15_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: d[15] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  hw2_pipe           ZeroWireload          N16ADFP_StdCellss0p72vm40c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  s2/dff2/q_reg_15_/CP (DFCNQD2BWP16P90LVT)               0.00       0.00 r
+  s2/dff2/q_reg_15_/Q (DFCNQD2BWP16P90LVT)                0.04       0.04 f
+  s2/dff2/q[15] (D_FF_DATA_WIDTH16)                       0.00       0.04 f
+  s2/result[15] (stage2)                                  0.00       0.04 f
+  d[15] (out)                                             0.00       0.04 f
+  data arrival time                                                  0.04
+
+  clock clk (rise edge)                                   0.25       0.25
+  clock network delay (ideal)                             0.00       0.25
+  output external delay                                   0.00       0.25
+  data required time                                                 0.25
+  --------------------------------------------------------------------------
+  data required time                                                 0.25
+  data arrival time                                                 -0.04
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.21
+
+
+1

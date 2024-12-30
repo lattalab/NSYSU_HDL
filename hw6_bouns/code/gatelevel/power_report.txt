@@ -1,0 +1,66 @@
+Loading db file '/cad/CBDK/CBDK_TSMC40_Arm_f2.0/CIC/SynopsysDC/db/sc9_base_rvt/sc9_cln40g_base_rvt_ss_typical_max_0p81v_125c.db'
+Loading db file '/home/B103040045_HDL/hw6/code/mem_compiler/sram_4096x36m16_nldm_tt_0p90v_0p90v_25c_syn.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : PE
+Version: T-2022.03
+Date   : Mon Dec 30 04:53:20 2024
+****************************************
+
+
+Library(s) Used:
+
+    sc9_cln40g_base_rvt_ss_typical_max_0p81v_125c (File: /cad/CBDK/CBDK_TSMC40_Arm_f2.0/CIC/SynopsysDC/db/sc9_base_rvt/sc9_cln40g_base_rvt_ss_typical_max_0p81v_125c.db)
+    USERLIB_nldm_tt_0p90v_0p90v_25c (File: /home/B103040045_HDL/hw6/code/mem_compiler/sram_4096x36m16_nldm_tt_0p90v_0p90v_25c_syn.db)
+
+
+Operating Conditions: ss_typical_max_0p81v_125c   Library: sc9_cln40g_base_rvt_ss_typical_max_0p81v_125c
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+PE                     Zero              sc9_cln40g_base_rvt_ss_typical_max_0p81v_125c
+
+
+Global Operating Voltage = 0.81 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1uW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  = 870.7465 uW   (99%)
+  Net Switching Power  =   8.1156 uW    (1%)
+                         ---------
+Total Dynamic Power    = 878.8620 uW  (100%)
+
+Cell Leakage Power     =   7.2181 mW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.8516        8.8252e-05        6.9292e+03            7.7809  (  96.10%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)  i
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential     1.5033e-02        8.4277e-06           81.0877        9.6129e-02  (   1.19%)
+combinational  4.1040e-03        8.0189e-03          207.7505            0.2199  (   2.72%)
+--------------------------------------------------------------------------------------------------
+Total              0.8707 mW     8.1156e-03 mW     7.2181e+03 uW         8.0969 mW
+1

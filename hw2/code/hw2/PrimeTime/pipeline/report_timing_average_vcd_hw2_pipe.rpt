@@ -1,0 +1,98 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-slack_lesser_than 0.00
+	-max_paths 5
+	-sort_by slack
+Design : hw2_pipe
+Version: V-2023.12
+Date   : Mon Oct 21 01:35:45 2024
+****************************************
+
+
+  Startpoint: s1/dff1/q_reg_4_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s2/dff2/q_reg_14_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  s1/dff1/q_reg_4_/CP (DFCNQD2BWP16P90LVT)                0.00       0.00 r
+  s1/dff1/q_reg_4_/Q (DFCNQD2BWP16P90LVT)                 0.04 *     0.04 f
+  s2/mult_33/U474/ZN (INVD4BWP16P90LVT)                   0.01 *     0.05 r
+  s2/mult_33/U551/ZN (NR2D1BWP16P90LVT)                   0.01 *     0.06 f
+  s2/mult_33/U136/S (FA1D1BWP16P90LVT)                    0.04 *     0.10 r
+  s2/mult_33/U386/ZN (ND2D1BWP16P90LVT)                   0.01 *     0.11 f
+  s2/mult_33/U456/ZN (ND3D2BWP16P90LVT)                   0.01 *     0.12 r
+  s2/mult_33/U501/Z (XOR2D2BWP16P90LVT)                   0.03 *     0.15 f
+  s2/mult_33/U431/ZN (ND2D1BWP16P90LVT)                   0.01 *     0.16 r
+  s2/mult_33/U291/Z (AN3D4BWP16P90LVT)                    0.02 *     0.17 r
+  s2/mult_33/U407/ZN (INR2D4BWP16P90LVT)                  0.02 *     0.19 r
+  s2/mult_33/U428/ZN (OAI21D2BWP16P90LVT)                 0.01 *     0.20 f
+  s2/mult_33/U559/ZN (AOI21D1BWP16P90LVT)                 0.01 *     0.21 r
+  s2/mult_33/U401/ZN (OAI21D1BWP16P90LVT)                 0.01 *     0.22 f
+  s2/mult_33/U565/ZN (XNR2D1BWP16P90LVT)                  0.02 *     0.24 r
+  s2/dff2/q_reg_14_/D (DFCNQD2BWP16P90LVT)                0.00 *     0.24 r
+  data arrival time                                                  0.24
+
+  clock clk (rise edge)                                   0.25       0.25
+  clock network delay (ideal)                             0.00       0.25
+  clock reconvergence pessimism                           0.00       0.25
+  s2/dff2/q_reg_14_/CP (DFCNQD2BWP16P90LVT)                          0.25 r
+  library setup time                                     -0.01 *     0.24
+  data required time                                                 0.24
+  ------------------------------------------------------------------------------
+  data required time                                                 0.24
+  data arrival time                                                 -0.24
+  ------------------------------------------------------------------------------
+  slack (VIOLATED: increase significant digits)                     -0.00
+
+
+  Startpoint: s1/dff1/q_reg_4_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s2/dff2/q_reg_13_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  s1/dff1/q_reg_4_/CP (DFCNQD2BWP16P90LVT)                0.00       0.00 r
+  s1/dff1/q_reg_4_/Q (DFCNQD2BWP16P90LVT)                 0.04 *     0.04 f
+  s2/mult_33/U474/ZN (INVD4BWP16P90LVT)                   0.01 *     0.05 r
+  s2/mult_33/U551/ZN (NR2D1BWP16P90LVT)                   0.01 *     0.06 f
+  s2/mult_33/U136/S (FA1D1BWP16P90LVT)                    0.04 *     0.10 r
+  s2/mult_33/U386/ZN (ND2D1BWP16P90LVT)                   0.01 *     0.11 f
+  s2/mult_33/U456/ZN (ND3D2BWP16P90LVT)                   0.01 *     0.12 r
+  s2/mult_33/U501/Z (XOR2D2BWP16P90LVT)                   0.03 *     0.15 f
+  s2/mult_33/U431/ZN (ND2D1BWP16P90LVT)                   0.01 *     0.16 r
+  s2/mult_33/U291/Z (AN3D4BWP16P90LVT)                    0.02 *     0.17 r
+  s2/mult_33/U407/ZN (INR2D4BWP16P90LVT)                  0.02 *     0.19 r
+  s2/mult_33/U428/ZN (OAI21D2BWP16P90LVT)                 0.01 *     0.20 f
+  s2/mult_33/U564/ZN (AOI21D1BWP16P90LVT)                 0.01 *     0.21 r
+  s2/mult_33/U503/ZN (OAI21D1BWP16P90LVT)                 0.01 *     0.22 f
+  s2/mult_33/U578/ZN (XNR2D1BWP16P90LVT)                  0.02 *     0.24 r
+  s2/dff2/q_reg_13_/D (DFCNQD2BWP16P90LVT)                0.00 *     0.24 r
+  data arrival time                                                  0.24
+
+  clock clk (rise edge)                                   0.25       0.25
+  clock network delay (ideal)                             0.00       0.25
+  clock reconvergence pessimism                           0.00       0.25
+  s2/dff2/q_reg_13_/CP (DFCNQD2BWP16P90LVT)                          0.25 r
+  library setup time                                     -0.01 *     0.24
+  data required time                                                 0.24
+  ------------------------------------------------------------------------------
+  data required time                                                 0.24
+  data arrival time                                                 -0.24
+  ------------------------------------------------------------------------------
+  slack (VIOLATED: increase significant digits)                     -0.00
+
+
+1

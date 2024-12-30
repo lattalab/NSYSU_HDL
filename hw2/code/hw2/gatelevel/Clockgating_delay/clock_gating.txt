@@ -1,0 +1,78 @@
+ 
+****************************************
+Report : clock_gating
+        -gating_elements
+Design : hw2_clockgating
+Version: V-2023.12
+Date   : Mon Oct 21 02:17:55 2024
+****************************************
+
+Information: Identification of clock-gating cells has not been performed. Pre-existing clock-gating cells will not be reported. (PWR-947)
+--------------------------------------------------------------------------------
+                             Clock Gating Cell Report
+--------------------------------------------------------------------------------
+
+ Clock Gating Bank : s1/dff1/clk_gate_C29
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     INPUTS :
+         s1/dff1/clk_gate_C29/CLK = clk 
+         s1/dff1/clk_gate_C29/EN = en 
+         s1/dff1/clk_gate_C29/TE = net47 
+
+     OUTPUTS :
+         s1/dff1/clk_gate_C29/ENCLK = gclk 
+
+ Clock Gating Bank : s2/dff2/clk_gate_C45
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     INPUTS :
+         s2/dff2/clk_gate_C45/CLK = clk 
+         s2/dff2/clk_gate_C45/EN = en 
+         s2/dff2/clk_gate_C45/TE = net29 
+
+     OUTPUTS :
+         s2/dff2/clk_gate_C45/ENCLK = gclk 
+--------------------------------------------------------------------------------
+
+
+                             Clock Gating Summary
+          ------------------------------------------------------------
+          |    Number of Clock gating elements    |        2         |
+          |                                       |                  |
+          |    Number of Gated registers          |    24 (100.00%)  |
+          |                                       |                  |
+          |    Number of Ungated registers        |     0 (0.00%)    |
+          |                                       |                  |
+          |    Total number of registers          |       24         |
+          ------------------------------------------------------------
+
+
+
+                             Clock Gating Report by Origin
+          +-------------------------------------------------+------------------+
+          |                                                 |    Actual (%)    |
+          |                                                 |    Count         |
+          +-------------------------------------------------+------------------+
+          |  Number of tool-inserted clock gating elements  |     2 (100.00%)  |
+          |                                                 |                  |
+          |  Number of pre-existing clock gating elements   |     0 (0.00%)    |
+          |                                                 |                  |
+          |  Number of gated registers                      |    24 (100.00%)  |
+          |                                                 |                  |
+          |  Number of tool-inserted gated registers        |    24 (100.00%)  |
+          |                                                 |                  |
+          |  Number of pre-existing gated registers         |     0 (0.00%)    |
+          |                                                 |                  |
+          |  Number of ungated registers                    |     0 (0.00%)    |
+          |                                                 |                  |
+          |  Number of registers                            |       24         |
+          +-------------------------------------------------+------------------+
+
+
+
+1

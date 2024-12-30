@@ -1,0 +1,70 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : hw2_nonpipe
+Version: V-2023.12
+Date   : Sun Oct 20 20:43:00 2024
+****************************************
+
+Operating Conditions: ss0p72vm40c   Library: N16ADFP_StdCellss0p72vm40c_ccs
+Wire Load Model Mode: top
+
+  Startpoint: b[1] (input port clocked by clk)
+  Endpoint: d[15] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  hw2_nonpipe        ZeroWireload          N16ADFP_StdCellss0p72vm40c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 r
+  b[1] (in)                                               0.00       0.00 r
+  sub_2/B[1] (hw2_nonpipe_DW01_sub_2)                     0.00       0.00 r
+  sub_2/U150/ZN (CKND16BWP16P90LVT)                       0.00       0.00 f
+  sub_2/U125/ZN (NR2D8BWP16P90LVT)                        0.01       0.01 r
+  sub_2/U99/ZN (OAI21D4BWP16P90LVT)                       0.01       0.02 f
+  sub_2/U170/ZN (AOI21D4BWP16P90LVT)                      0.01       0.03 r
+  sub_2/U139/ZN (OAI21D1BWP16P90LVT)                      0.01       0.04 f
+  sub_2/U133/ZN (ND2D1BWP16P90LVT)                        0.01       0.05 r
+  sub_2/U135/ZN (ND2D4BWP16P90LVT)                        0.01       0.06 f
+  sub_2/DIFF[7] (hw2_nonpipe_DW01_sub_2)                  0.00       0.06 f
+  mult_2_2/a[7] (hw2_nonpipe_DW_mult_uns_6)               0.00       0.06 f
+  mult_2_2/U316/Z (XOR2D4BWP16P90LVT)                     0.02       0.09 r
+  mult_2_2/U521/ZN (OAI22D4BWP16P90LVT)                   0.01       0.09 f
+  mult_2_2/U304/ZN (CKND2BWP16P90LVT)                     0.01       0.10 r
+  mult_2_2/U318/ZN (IND2D2BWP16P90LVT)                    0.01       0.11 f
+  mult_2_2/U312/ZN (CKND2D2BWP16P90LVT)                   0.01       0.11 r
+  mult_2_2/U519/Z (XOR2D4BWP16P90LVT)                     0.02       0.14 f
+  mult_2_2/U425/Z (XOR2D4BWP16P90LVT)                     0.02       0.16 f
+  mult_2_2/U374/Z (XOR2D2BWP16P90LVT)                     0.02       0.17 r
+  mult_2_2/U373/ZN (ND2D2BWP16P90LVT)                     0.01       0.18 f
+  mult_2_2/U503/ZN (CKND2BWP16P90LVT)                     0.01       0.19 r
+  mult_2_2/U531/ZN (AOI21D2BWP16P90LVT)                   0.01       0.19 f
+  mult_2_2/U562/ZN (OAI21D2BWP16P90LVT)                   0.01       0.20 r
+  mult_2_2/U388/ZN (AOI21D2BWP16P90LVT)                   0.01       0.21 f
+  mult_2_2/U579/ZN (OAI21D1BWP16P90LVT)                   0.01       0.22 r
+  mult_2_2/U632/ZN (XNR2D1BWP16P90LVT)                    0.02       0.24 f
+  mult_2_2/product[15] (hw2_nonpipe_DW_mult_uns_6)        0.00       0.24 f
+  U20/ZN (ND2D1BWP16P90LVT)                               0.01       0.24 r
+  U22/ZN (ND2D1BWP16P90LVT)                               0.01       0.25 f
+  d[15] (out)                                             0.00       0.25 f
+  data arrival time                                                  0.25
+
+  max_delay                                               0.25       0.25
+  output external delay                                   0.00       0.25
+  data required time                                                 0.25
+  --------------------------------------------------------------------------
+  data required time                                                 0.25
+  data arrival time                                                 -0.25
+  --------------------------------------------------------------------------
+  slack (VIOLATED: increase significant digits)                      0.00
+
+
+1

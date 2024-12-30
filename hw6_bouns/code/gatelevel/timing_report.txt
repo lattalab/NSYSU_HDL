@@ -1,0 +1,38 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : PE
+Version: T-2022.03
+Date   : Mon Dec 30 04:53:17 2024
+****************************************
+
+Operating Conditions: ss_typical_max_0p81v_125c   Library: sc9_cln40g_base_rvt_ss_typical_max_0p81v_125c
+Wire Load Model Mode: top
+
+  Startpoint: sram_conv1/mem
+              (rising edge-triggered flip-flop)
+  Endpoint: conv_rdata1[35]
+            (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  PE                 Zero                  sc9_cln40g_base_rvt_ss_typical_max_0p81v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  sram_conv1/mem/CLK (sram_4096x36m16)                    0.00       0.00 r
+  sram_conv1/mem/Q[35] (sram_4096x36m16)                  0.82       0.82 r
+  sram_conv1/Q[35] (TOP_4)                                0.00       0.82 r
+  conv_rdata1[35] (out)                                   0.00       0.82 r
+  data arrival time                                                  0.82
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

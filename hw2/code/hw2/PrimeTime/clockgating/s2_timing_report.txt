@@ -1,0 +1,117 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-group **async_default** **clock_gating_default** **default** clk
+	-sort_by group
+Design : hw2_clockgating
+Version: V-2023.12
+Date   : Mon Oct 21 01:52:22 2024
+****************************************
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: s2/dff2/q_reg_0_
+               (recovery check against rising-edge clock clk)
+  Path Group: **async_default**
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 f
+  reset (in)                                              0.00       0.00 f
+  s2/reset (stage2_gating) <-                             0.00 *     0.00 f
+  s2/dff2/U3/ZN (CKND1BWP16P90LVT)                        0.04 *     0.04 r
+  s2/dff2/q_reg_0_/CDN (DFCNQD2BWP16P90LVT)               0.00 *     0.04 r
+  data arrival time                                                  0.04
+
+  clock clk (rise edge)                                   0.25       0.25
+  clock network delay (ideal)                             0.00       0.25
+  clock reconvergence pessimism                           0.00       0.25
+  s2/dff2/q_reg_0_/CP (DFCNQD2BWP16P90LVT)                           0.25 r
+  library recovery time                                   0.00 *     0.25
+  data required time                                                 0.25
+  ------------------------------------------------------------------------------
+  data required time                                                 0.25
+  data arrival time                                                 -0.04
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        0.21
+
+
+  Startpoint: c[5] (input port clocked by clk)
+  Endpoint: s2/dff2/U4 (rising clock gating-check end-point clocked by clk)
+  Path Group: **clock_gating_default**
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 f
+  c[5] (in)                                               0.00       0.00 f
+  s2/c[5] (stage2_gating) <-                              0.00 *     0.00 f
+  s2/U3/ZN (NR4D1BWP16P90LVT)                             0.01 *     0.01 r
+  s2/U1/ZN (ND2D1BWP16P90LVT)                             0.01 *     0.02 f
+  s2/dff2/U4/A1 (AN2D1BWP16P90LVT)                        0.00 *     0.02 f
+  data arrival time                                                  0.02
+
+  clock clk (rise edge)                                   0.25       0.25
+  clock network delay (ideal)                             0.00       0.25
+  clock reconvergence pessimism                           0.00       0.25
+  s2/dff2/U4/A2 (AN2D1BWP16P90LVT)                                   0.25 r
+  clock gating setup time                                 0.00       0.25
+  data required time                                                 0.25
+  ------------------------------------------------------------------------------
+  data required time                                                 0.25
+  data arrival time                                                 -0.02
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        0.23
+
+
+  Startpoint: s1/dff1/q_reg_3_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s2/dff2/q_reg_13_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  s1/dff1/q_reg_3_/CP (DFCNQD2BWP16P90LVT)                0.00       0.00 r
+  s1/dff1/q_reg_3_/Q (DFCNQD2BWP16P90LVT)                 0.04 *     0.04 f
+  s2/addsub[3] (stage2_gating) <-                         0.00 *     0.04 f
+  s2/mult_37/U456/ZN (INVD4BWP16P90LVT)                   0.01 *     0.05 r
+  s2/mult_37/U369/ZN (NR2D2BWP16P90LVT)                   0.01 *     0.06 f
+  s2/mult_37/U498/ZN (ND2D1BWP16P90LVT)                   0.01 *     0.06 r
+  s2/mult_37/U287/ZN (ND3D1BWP16P90LVT)                   0.02 *     0.08 f
+  s2/mult_37/U440/ZN (ND2D1BWP16P90LVT)                   0.01 *     0.09 r
+  s2/mult_37/U351/ZN (ND3D2BWP16P90LVT)                   0.01 *     0.10 f
+  s2/mult_37/U322/S (FA1D1BWP16P90LVT)                    0.05 *     0.15 r
+  s2/mult_37/U449/Z (XOR3D4BWP16P90LVT)                   0.03 *     0.18 f
+  s2/mult_37/U364/ZN (NR2D2BWP16P90LVT)                   0.01 *     0.18 r
+  s2/mult_37/U481/ZN (NR2D2BWP16P90LVT)                   0.01 *     0.19 f
+  s2/mult_37/U326/ZN (AOI21D1BWP16P90LVT)                 0.01 *     0.21 r
+  s2/mult_37/U325/ZN (OAI21D1BWP16P90LVT)                 0.01 *     0.22 f
+  s2/mult_37/U324/ZN (XNR2D1BWP16P90LVT)                  0.02 *     0.24 r
+  s2/dff2/q_reg_13_/D (DFCNQD2BWP16P90LVT)                0.00 *     0.24 r
+  data arrival time                                                  0.24
+
+  clock clk (rise edge)                                   0.25       0.25
+  clock network delay (ideal)                             0.00       0.25
+  clock reconvergence pessimism                           0.00       0.25
+  s2/dff2/q_reg_13_/CP (DFCNQD2BWP16P90LVT)                          0.25 r
+  library setup time                                     -0.01 *     0.24
+  data required time                                                 0.24
+  ------------------------------------------------------------------------------
+  data required time                                                 0.24
+  data arrival time                                                 -0.24
+  ------------------------------------------------------------------------------
+  slack (VIOLATED: increase significant digits)                     -0.00
+
+
+1

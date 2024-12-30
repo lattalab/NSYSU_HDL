@@ -1,0 +1,14 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : hw2_pipe
+Version: V-2023.12
+Date   : Mon Oct 21 01:35:45 2024
+****************************************
+
+No Paths.
+
+1

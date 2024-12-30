@@ -1,0 +1,47 @@
+ 
+****************************************
+Report : area
+Design : hw2_nonpipe
+Version: V-2023.12
+Date   : Sun Oct 20 20:43:00 2024
+****************************************
+
+Library(s) Used:
+
+    N16ADFP_StdCellss0p72vm40c_ccs (File: /cad/CBDK/ADFP/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.db)
+
+Number of ports:                          157
+Number of nets:                          1068
+Number of cells:                          901
+Number of combinational cells:            897
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                        146
+Number of references:                      12
+
+Combinational area:                411.972486
+Buf/Inv area:                       41.575681
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                   411.972486
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  -------------------------
+hw2_nonpipe                        411.9725    100.0    8.7610     0.0000  0.0000  hw2_nonpipe
+add_2                               41.4202     10.1   41.4202     0.0000  0.0000  hw2_nonpipe_DW01_add_2
+mult_2                             141.7306     34.4  141.7306     0.0000  0.0000  hw2_nonpipe_DW_mult_uns_7
+mult_2_2                           160.9114     39.1  160.9114     0.0000  0.0000  hw2_nonpipe_DW_mult_uns_6
+sub_2                               59.1494     14.4   59.1494     0.0000  0.0000  hw2_nonpipe_DW01_sub_2
+--------------------------------  ---------  -------  --------  ---------  ------  -------------------------
+Total                                                 411.9725     0.0000  0.0000
+
+1

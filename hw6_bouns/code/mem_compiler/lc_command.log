@@ -1,0 +1,19 @@
+#@ # 
+#@ # Running lc_shell Version V-2023.12 for linux64 -- Nov 23, 2023
+#@ # Date:   Mon Dec 30 04:13:22 2024
+#@ # Run by: B103040045_HDL@DTrump
+#@ 
+
+read_lib sram_4096x36m16_nldm_tt_0p90v_0p90v_25c_syn.lib
+write_lib USERLIB_nldm_tt_0p90v_0p90v_25c -output sram_4096x36m16_nldm_tt_0p90v_0p90v_25c_syn.db
+read_lib sram_4096x36m16_nldm_ss_0p81v_0p81v_m40c_syn.lib
+write_lib USERLIB_nldm_ss_0p81v_0p81v_m40c -output sram_4096x36m16_nldm_ss_0p81v_0p81v_m40c_syn.db
+read_lib sram_4096x36m16_nldm_ss_0p81v_0p81v_125c_syn.lib
+write_lib USERLIB_nldm_ss_0p81v_0p81v_125c -output sram_4096x36m16_nldm_ss_0p81v_0p81v_125c_syn.db
+read_lib sram_4096x36m16_nldm_ffg_0p99v_0p99v_125c_syn.lib
+write_lib USERLIB_nldm_ffg_0p99v_0p99v_125c -output sram_4096x36m16_nldm_ffg_0p99v_0p99v_125c_syn.db
+read_lib sram_4096x36m16_nldm_ff_0p99v_0p99v_m40c_syn.lib
+write_lib USERLIB_nldm_ff_0p99v_0p99v_m40c -output sram_4096x36m16_nldm_ff_0p99v_0p99v_m40c_syn.db
+read_lib sram_4096x36m16_nldm_ff_0p99v_0p99v_125c_syn.lib
+write_lib USERLIB_nldm_ff_0p99v_0p99v_125c -output sram_4096x36m16_nldm_ff_0p99v_0p99v_125c_syn.db
+exit

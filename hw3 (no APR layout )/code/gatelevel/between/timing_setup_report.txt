@@ -1,0 +1,99 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : thumb
+Version: V-2023.12
+Date   : Sun Nov 10 07:12:53 2024
+****************************************
+
+Operating Conditions: ss0p72vm40c   Library: N16ADFP_StdCellss0p72vm40c_ccs
+Wire Load Model Mode: top
+
+  Startpoint: stage2/ID_Rm_Rs_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: stage3/Z_Flag_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  thumb              ZeroWireload          N16ADFP_StdCellss0p72vm40c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                 0.0000     0.0000
+  clock network delay (ideal)                           0.2000     0.2000
+  stage2/ID_Rm_Rs_reg_2_/CP (DFCNQD2BWP16P90LVT)        0.0000     0.2000 r
+  stage2/ID_Rm_Rs_reg_2_/Q (DFCNQD2BWP16P90LVT)         0.1010     0.3010 f
+  stage2/ID_Rm_Rs[2] (ID_stage)                         0.0000     0.3010 f
+  stage3/ID_Rm_Rs[2] (ex_stage)                         0.0000     0.3010 f
+  stage3/U3553/Z (BUFFD1BWP16P90LVT)                    0.1881     0.4891 f
+  stage3/mult_762/b[2] (ex_stage_DW_mult_uns_0)         0.0000     0.4891 f
+  stage3/mult_762/U1059/CO (FA1D1BWP16P90LVT)           0.0628     0.5519 f
+  stage3/mult_762/U1058/CO (FA1D1BWP16P90LVT)           0.0290     0.5809 f
+  stage3/mult_762/U1057/CO (FA1D1BWP16P90LVT)           0.0290     0.6099 f
+  stage3/mult_762/U1056/CO (FA1D1BWP16P90LVT)           0.0285     0.6385 f
+  stage3/mult_762/U1055/CO (FA1D1BWP16P90LVT)           0.0284     0.6668 f
+  stage3/mult_762/U1054/CO (FA1D1BWP16P90LVT)           0.0284     0.6952 f
+  stage3/mult_762/U1053/CO (FA1D1BWP16P90LVT)           0.0280     0.7232 f
+  stage3/mult_762/U1052/CO (FA1D1BWP16P90LVT)           0.0280     0.7512 f
+  stage3/mult_762/U1051/CO (FA1D1BWP16P90LVT)           0.0280     0.7793 f
+  stage3/mult_762/U1050/CO (FA1D1BWP16P90LVT)           0.0280     0.8073 f
+  stage3/mult_762/U1049/CO (FA1D1BWP16P90LVT)           0.0280     0.8353 f
+  stage3/mult_762/U1048/S (FA1D1BWP16P90LVT)            0.0487     0.8840 r
+  stage3/mult_762/U1255/ZN (AOI22D1BWP16P90)            0.0201     0.9041 f
+  stage3/mult_762/U1254/ZN (OAI221D1BWP16P90)           0.0179     0.9220 r
+  stage3/mult_762/U1253/ZN (XNR2D1BWP16P90)             0.0394     0.9614 f
+  stage3/mult_762/U158/CO (FA1D1BWP16P90LVT)            0.0301     0.9915 f
+  stage3/mult_762/U157/CO (FA1D1BWP16P90LVT)            0.0276     1.0191 f
+  stage3/mult_762/U156/CO (FA1D1BWP16P90LVT)            0.0276     1.0467 f
+  stage3/mult_762/U155/CO (FA1D1BWP16P90LVT)            0.0276     1.0744 f
+  stage3/mult_762/U154/CO (FA1D1BWP16P90LVT)            0.0276     1.1020 f
+  stage3/mult_762/U153/CO (FA1D1BWP16P90LVT)            0.0276     1.1296 f
+  stage3/mult_762/U152/CO (FA1D1BWP16P90LVT)            0.0276     1.1573 f
+  stage3/mult_762/U151/CO (FA1D1BWP16P90LVT)            0.0276     1.1849 f
+  stage3/mult_762/U150/CO (FA1D1BWP16P90LVT)            0.0276     1.2125 f
+  stage3/mult_762/U149/CO (FA1D1BWP16P90LVT)            0.0276     1.2402 f
+  stage3/mult_762/U148/CO (FA1D1BWP16P90LVT)            0.0276     1.2678 f
+  stage3/mult_762/U147/CO (FA1D1BWP16P90LVT)            0.0276     1.2955 f
+  stage3/mult_762/U146/CO (FA1D1BWP16P90LVT)            0.0276     1.3231 f
+  stage3/mult_762/U145/CO (FA1D1BWP16P90LVT)            0.0276     1.3507 f
+  stage3/mult_762/U144/CO (FA1D1BWP16P90LVT)            0.0276     1.3784 f
+  stage3/mult_762/U143/CO (FA1D1BWP16P90LVT)            0.0276     1.4060 f
+  stage3/mult_762/U142/CO (FA1D1BWP16P90LVT)            0.0276     1.4336 f
+  stage3/mult_762/U141/CO (FA1D1BWP16P90LVT)            0.0259     1.4595 f
+  stage3/mult_762/U1182/ZN (XNR3D1BWP16P90)             0.0536     1.5131 r
+  stage3/mult_762/U1181/Z (XOR4D1BWP16P90)              0.0676     1.5807 f
+  stage3/mult_762/product[31] (ex_stage_DW_mult_uns_0)
+                                                        0.0000     1.5807 f
+  stage3/U5024/ZN (AOI222D1BWP16P90)                    0.0344     1.6152 r
+  stage3/U5025/ZN (ND4D1BWP16P90)                       0.0291     1.6443 f
+  stage3/U5034/ZN (AOI22D1BWP16P90)                     0.0199     1.6641 r
+  stage3/U5044/ZN (ND3D1BWP16P90)                       0.0243     1.6884 f
+  stage3/U3544/ZN (OAI22D1BWP16P90LVT)                  0.0199     1.7083 r
+  stage3/U3012/ZN (ND3D1BWP16P90LVT)                    0.0135     1.7219 f
+  stage3/U3010/ZN (NR4D1BWP16P90LVT)                    0.0146     1.7365 r
+  stage3/U3546/ZN (AOI31D1BWP16P90LVT)                  0.0131     1.7496 f
+  stage3/U3545/ZN (IOA22D1BWP16P90LVT)                  0.0110     1.7606 r
+  stage3/Z_Flag_reg/D (DFQD2BWP16P90LVT)                0.0000     1.7606 r
+  data arrival time                                                1.7606
+
+  clock clk (rise edge)                                 1.7186     1.7186
+  clock network delay (ideal)                           0.2000     1.9187
+  clock uncertainty                                    -0.0200     1.8987
+  stage3/Z_Flag_reg/CP (DFQD2BWP16P90LVT)               0.0000     1.8987 r
+  library setup time                                   -0.0047     1.8940
+  data required time                                               1.8940
+  --------------------------------------------------------------------------
+  data required time                                               1.8940
+  data arrival time                                               -1.7606
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.1334
+
+
+1

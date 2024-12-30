@@ -1,0 +1,85 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-group **async_default** **clock_gating_default** **default** clk
+	-sort_by group
+Design : thumb
+Version: V-2023.12
+Date   : Mon Nov 11 10:52:16 2024
+****************************************
+
+
+  Startpoint: reset_n (input port clocked by clk)
+  Endpoint: stage4/R_reg_110_
+               (recovery check against rising-edge clock clk)
+  Path Group: **async_default**
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.20       0.20
+  input external delay                                    0.88       1.08 r
+  reset_n (in)                                            0.00       1.08 r
+  U96/Z (BUFFD1BWP16P90LVT)                               0.11 *     1.18 r
+  stage4/reset_n (thumb_wb) <-                            0.00 *     1.18 r
+  stage4/U134/Z (BUFFD1BWP16P90LVT)                       0.03 *     1.21 r
+  stage4/U87/Z (BUFFD1BWP16P90LVT)                        0.01 *     1.22 r
+  stage4/U42/Z (BUFFD1BWP16P90LVT)                        0.01 *     1.24 r
+  stage4/U13/Z (BUFFD1BWP16P90LVT)                        0.04 *     1.27 r
+  stage4/R_reg_110_/CDN (DFCNQND1BWP16P90LVT)             0.00 *     1.27 r
+  data arrival time                                                  1.27
+
+  clock clk (rise edge)                                   2.92       2.92
+  clock network delay (ideal)                             0.20       3.12
+  clock reconvergence pessimism                           0.00       3.12
+  clock uncertainty                                      -0.02       3.10
+  stage4/R_reg_110_/CP (DFCNQND1BWP16P90LVT)                         3.10 r
+  library recovery time                                   0.01 *     3.11
+  data required time                                                 3.11
+  ------------------------------------------------------------------------------
+  data required time                                                 3.11
+  data arrival time                                                 -1.27
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        1.84
+
+
+  Startpoint: data[7] (input port clocked by clk)
+  Endpoint: stage4/R_reg_111_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.20       0.20
+  input external delay                                    0.88       1.08 f
+  data[7] (inout)                                         0.00       1.08 f
+  U72/Z (BUFFD1BWP16P90LVT)                               0.04 *     1.12 f
+  stage4/data[7] (thumb_wb) <-                            0.00 *     1.12 f
+  stage4/U136/ZN (ND2D1BWP16P90LVT)                       0.02 *     1.13 r
+  stage4/U139/ZN (IOA21D1BWP16P90LVT)                     0.01 *     1.15 f
+  stage4/U138/Z (BUFFD1BWP16P90LVT)                       0.03 *     1.18 f
+  stage4/U137/ZN (AOI211D1BWP16P90LVT)                    0.05 *     1.23 r
+  stage4/U143/ZN (MAOI22D1BWP16P90LVT)                    0.02 *     1.25 r
+  stage4/R_reg_111_/D (DFCNQND1BWP16P90LVT)               0.00 *     1.25 r
+  data arrival time                                                  1.25
+
+  clock clk (rise edge)                                   2.92       2.92
+  clock network delay (ideal)                             0.20       3.12
+  clock reconvergence pessimism                           0.00       3.12
+  clock uncertainty                                      -0.02       3.10
+  stage4/R_reg_111_/CP (DFCNQND1BWP16P90LVT)                         3.10 r
+  library setup time                                     -0.01 *     3.09
+  data required time                                                 3.09
+  ------------------------------------------------------------------------------
+  data required time                                                 3.09
+  data arrival time                                                 -1.25
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        1.85
+
+
+1

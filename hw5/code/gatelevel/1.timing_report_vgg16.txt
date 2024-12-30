@@ -1,0 +1,67 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : PE
+Version: T-2022.03
+Date   : Sat Dec 21 03:23:05 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss0p72vm40c   Library: N16ADFP_StdCellss0p72vm40c_ccs
+Wire Load Model Mode: top
+
+  Startpoint: LineBuffer3/col_counter_reg_8_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: LineBuffer3/fifo_row2_reg_48__7_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  PE                 ZeroWireload          N16ADFP_StdCellss0p72vm40c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  LineBuffer3/col_counter_reg_8_/CP (DFCNQD2BWP16P90LVT)
+                                                      0.000000 # 0.000000 r
+  LineBuffer3/col_counter_reg_8_/Q (DFCNQD2BWP16P90LVT)
+                                                      0.122947   0.122947 f
+  LineBuffer3/U16193/ZN (NR3D1BWP16P90LVT)            0.031635   0.154582 r
+  LineBuffer3/U4528/ZN (ND2D1BWP16P90LVT)             0.215792   0.370374 f
+  LineBuffer3/U643/Z (BUFFD1BWP16P90LVT)              0.239556   0.609930 f
+  LineBuffer3/U283/Z (BUFFD1BWP16P90LVT)              0.238096   0.848026 f
+  LineBuffer3/U139/ZN (CKND1BWP16P90LVT)              0.325503   1.173530 r
+  LineBuffer3/U112/Z (BUFFD1BWP16P90LVT)              0.249361   1.422890 r
+  LineBuffer3/U60/Z (BUFFD1BWP16P90LVT)               0.249691   1.672581 r
+  LineBuffer3/U59/Z (BUFFD1BWP16P90LVT)               0.251160   1.923741 r
+  LineBuffer3/U113/Z (BUFFD1BWP16P90LVT)              0.253051   2.176792 r
+  LineBuffer3/U61/Z (BUFFD1BWP16P90LVT)               0.253007   2.429799 r
+  LineBuffer3/U47/Z (BUFFD1BWP16P90LVT)               0.251832   2.681632 r
+  LineBuffer3/U49/Z (BUFFD1BWP16P90LVT)               0.221125   2.902757 r
+  LineBuffer3/U13931/Z (AO22D1BWP16P90LVT)            0.036430   2.939187 r
+  LineBuffer3/fifo_row2_reg_48__7_/D (DFCNQD2BWP16P90LVT)
+                                                      0.000000   2.939187 r
+  data arrival time                                              2.939187
+
+  clock clk (rise edge)                               10.000000  10.000000
+  clock network delay (ideal)                         0.000000   10.000000
+  LineBuffer3/fifo_row2_reg_48__7_/CP (DFCNQD2BWP16P90LVT)
+                                                      0.000000   10.000000 r
+  library setup time                                  -0.014831  9.985168
+  data required time                                             9.985168
+  --------------------------------------------------------------------------
+  data required time                                             9.985168
+  data arrival time                                              -2.939187
+  --------------------------------------------------------------------------
+  slack (MET)                                                    7.045981
+
+
+1

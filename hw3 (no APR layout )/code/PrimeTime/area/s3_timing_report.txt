@@ -1,0 +1,122 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-group **async_default** **clock_gating_default** **default** clk
+	-sort_by group
+Design : thumb
+Version: V-2023.12
+Date   : Mon Nov 11 10:52:16 2024
+****************************************
+
+
+  Startpoint: reset_n (input port clocked by clk)
+  Endpoint: stage3/write_data_n_reg
+               (recovery check against rising-edge clock clk)
+  Path Group: **async_default**
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.20       0.20
+  input external delay                                    0.88       1.08 r
+  reset_n (in)                                            0.00       1.08 r
+  U96/Z (BUFFD1BWP16P90LVT)                               0.11 *     1.18 r
+  stage3/reset_n (ex_stage) <-                            0.00 *     1.18 r
+  stage3/U3053/Z (BUFFD1BWP16P90LVT)                      0.03 *     1.21 r
+  stage3/write_data_n_reg/CDN (DFCNQND1BWP16P90LVT)       0.00 *     1.21 r
+  data arrival time                                                  1.21
+
+  clock clk (rise edge)                                   2.92       2.92
+  clock network delay (ideal)                             0.20       3.12
+  clock reconvergence pessimism                           0.00       3.12
+  clock uncertainty                                      -0.02       3.10
+  stage3/write_data_n_reg/CP (DFCNQND1BWP16P90LVT)                   3.10 r
+  library recovery time                                   0.01 *     3.11
+  data required time                                                 3.11
+  ------------------------------------------------------------------------------
+  data required time                                                 3.11
+  data arrival time                                                 -1.21
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        1.90
+
+
+  Startpoint: stage2/ID_Rm_Rs_reg_2_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: stage3/Z_Flag_reg
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.20       0.20
+  stage2/ID_Rm_Rs_reg_2_/CP (DFCNQD2BWP16P90LVT)          0.00       0.20 r
+  stage2/ID_Rm_Rs_reg_2_/Q (DFCNQD2BWP16P90LVT)           0.10 *     0.30 f
+  stage3/ID_Rm_Rs[2] (ex_stage) <-                        0.00 *     0.30 f
+  stage3/U3553/Z (BUFFD1BWP16P90LVT)                      0.19 *     0.49 f
+  stage3/mult_762/U1059/CO (FA1D1BWP16P90LVT)             0.06 *     0.55 f
+  stage3/mult_762/U1058/CO (FA1D1BWP16P90LVT)             0.03 *     0.58 f
+  stage3/mult_762/U1057/CO (FA1D1BWP16P90LVT)             0.03 *     0.61 f
+  stage3/mult_762/U1056/CO (FA1D1BWP16P90LVT)             0.03 *     0.64 f
+  stage3/mult_762/U1055/CO (FA1D1BWP16P90LVT)             0.03 *     0.67 f
+  stage3/mult_762/U1054/CO (FA1D1BWP16P90LVT)             0.03 *     0.69 f
+  stage3/mult_762/U1053/CO (FA1D1BWP16P90LVT)             0.03 *     0.72 f
+  stage3/mult_762/U1052/CO (FA1D1BWP16P90LVT)             0.03 *     0.75 f
+  stage3/mult_762/U1051/CO (FA1D1BWP16P90LVT)             0.03 *     0.78 f
+  stage3/mult_762/U1050/CO (FA1D1BWP16P90LVT)             0.03 *     0.81 f
+  stage3/mult_762/U1049/CO (FA1D1BWP16P90LVT)             0.03 *     0.83 f
+  stage3/mult_762/U1048/S (FA1D1BWP16P90LVT)              0.05 *     0.88 r
+  stage3/mult_762/U1255/ZN (AOI22D1BWP16P90)              0.02 *     0.90 f
+  stage3/mult_762/U1254/ZN (OAI221D1BWP16P90)             0.02 *     0.92 r
+  stage3/mult_762/U1253/ZN (XNR2D1BWP16P90)               0.04 *     0.96 f
+  stage3/mult_762/U158/CO (FA1D1BWP16P90LVT)              0.03 *     0.99 f
+  stage3/mult_762/U157/CO (FA1D1BWP16P90LVT)              0.03 *     1.02 f
+  stage3/mult_762/U156/CO (FA1D1BWP16P90LVT)              0.03 *     1.05 f
+  stage3/mult_762/U155/CO (FA1D1BWP16P90LVT)              0.03 *     1.07 f
+  stage3/mult_762/U154/CO (FA1D1BWP16P90LVT)              0.03 *     1.10 f
+  stage3/mult_762/U153/CO (FA1D1BWP16P90LVT)              0.03 *     1.13 f
+  stage3/mult_762/U152/CO (FA1D1BWP16P90LVT)              0.03 *     1.16 f
+  stage3/mult_762/U151/CO (FA1D1BWP16P90LVT)              0.03 *     1.19 f
+  stage3/mult_762/U150/CO (FA1D1BWP16P90LVT)              0.03 *     1.21 f
+  stage3/mult_762/U149/CO (FA1D1BWP16P90LVT)              0.03 *     1.24 f
+  stage3/mult_762/U148/CO (FA1D1BWP16P90LVT)              0.03 *     1.27 f
+  stage3/mult_762/U147/CO (FA1D1BWP16P90LVT)              0.03 *     1.30 f
+  stage3/mult_762/U146/CO (FA1D1BWP16P90LVT)              0.03 *     1.33 f
+  stage3/mult_762/U145/CO (FA1D1BWP16P90LVT)              0.03 *     1.35 f
+  stage3/mult_762/U144/CO (FA1D1BWP16P90LVT)              0.03 *     1.38 f
+  stage3/mult_762/U143/CO (FA1D1BWP16P90LVT)              0.03 *     1.41 f
+  stage3/mult_762/U142/CO (FA1D1BWP16P90LVT)              0.03 *     1.44 f
+  stage3/mult_762/U141/CO (FA1D1BWP16P90LVT)              0.03 *     1.46 f
+  stage3/mult_762/U1182/ZN (XNR3D1BWP16P90)               0.05 *     1.52 r
+  stage3/mult_762/U1181/Z (XOR4D1BWP16P90)                0.07 *     1.59 f
+  stage3/U5023/ZN (AOI222D1BWP16P90)                      0.03 *     1.62 r
+  stage3/U5024/ZN (ND4D1BWP16P90)                         0.03 *     1.65 f
+  stage3/U5033/ZN (AOI22D1BWP16P90)                       0.02 *     1.67 r
+  stage3/U5043/ZN (ND3D1BWP16P90)                         0.02 *     1.69 f
+  stage3/U3544/ZN (OAI22D1BWP16P90LVT)                    0.02 *     1.71 r
+  stage3/U3012/ZN (ND3D1BWP16P90LVT)                      0.01 *     1.73 f
+  stage3/U3010/ZN (NR4D1BWP16P90LVT)                      0.01 *     1.74 r
+  stage3/U3546/ZN (AOI31D1BWP16P90LVT)                    0.01 *     1.76 f
+  stage3/U3545/ZN (IOA22D1BWP16P90LVT)                    0.01 *     1.77 r
+  stage3/Z_Flag_reg/D (DFQD2BWP16P90LVT)                  0.00 *     1.77 r
+  data arrival time                                                  1.77
+
+  clock clk (rise edge)                                   2.92       2.92
+  clock network delay (ideal)                             0.20       3.12
+  clock reconvergence pessimism                           0.00       3.12
+  clock uncertainty                                      -0.02       3.10
+  stage3/Z_Flag_reg/CP (DFQD2BWP16P90LVT)                            3.10 r
+  library setup time                                     -0.00 *     3.10
+  data required time                                                 3.10
+  ------------------------------------------------------------------------------
+  data required time                                                 3.10
+  data arrival time                                                 -1.77
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        1.33
+
+
+1

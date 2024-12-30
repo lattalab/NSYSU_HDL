@@ -1,0 +1,59 @@
+ 
+****************************************
+Report : area
+Design : sobel_detecter
+Version: T-2022.03
+Date   : Mon Dec  2 01:57:31 2024
+****************************************
+
+Library(s) Used:
+
+    N16ADFP_StdCellss0p72vm40c_ccs (File: /cad/CBDK/ADFP/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.db)
+
+Number of ports:                          582
+Number of nets:                          8886
+Number of cells:                         8254
+Number of combinational cells:            491
+Number of sequential cells:              7747
+Number of macros/black boxes:               0
+Number of buf/inv:                        183
+Number of references:                       3
+
+Combinational area:                213.788165
+Buf/Inv area:                       33.488641
+Noncombinational area:            8835.402562
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  9049.190727
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  -----------------------------------------
+sobel_detecter                    9049.1907    100.0    0.0000     0.0000  0.0000  sobel_detecter
+LineBuffer                        8867.8026     98.0   20.2694  8822.7536  0.0000  LineBuffer
+LineBuffer/gen_en                   24.7795      0.3    4.4064    12.6490  0.0000  generate_enable
+LineBuffer/gen_en/add_120            7.7242      0.1    7.7242     0.0000  0.0000  generate_enable_DW01_inc_0
+intensity_converter                 29.7562      0.3    8.0352     0.0000  0.0000  intensity_converter
+intensity_converter/add_0_root_add_0_root_add_61_2    7.9834     0.1   7.9834    0.0000 0.0000 intensity_converter_DW01_add_0_DW01_add_1
+intensity_converter/add_1_root_add_0_root_add_61_2    6.9984     0.1   6.9984    0.0000 0.0000 intensity_converter_DW01_add_2_DW01_add_3
+intensity_converter/add_2_root_add_0_root_add_61_2    6.7392     0.1   6.7392    0.0000 0.0000 intensity_converter_DW01_add_1_DW01_add_2
+sobel_conv                         151.6320      1.7   59.2013     0.0000  0.0000  sobel_conv
+sobel_conv/add_0_root_add_0_root_sub_144   11.3530     0.1  11.3530    0.0000 0.0000 sobel_conv_DW01_add_2_DW01_add_6
+sobel_conv/add_143                  10.0570      0.1   10.0570     0.0000  0.0000  sobel_conv_DW01_add_1_DW01_add_5
+sobel_conv/add_143_2                12.4416      0.1   12.4416     0.0000  0.0000  sobel_conv_DW01_add_0
+sobel_conv/sub_143                   9.4349      0.1    9.4349     0.0000  0.0000  sobel_conv_DW01_sub_6_DW01_sub_7
+sobel_conv/sub_143_2                10.5235      0.1   10.5235     0.0000  0.0000  sobel_conv_DW01_sub_5_DW01_sub_6
+sobel_conv/sub_143_3                12.8563      0.1   12.8563     0.0000  0.0000  sobel_conv_DW01_sub_4
+sobel_conv/sub_144_2                12.0787      0.1   12.0787     0.0000  0.0000  sobel_conv_DW01_sub_3
+sobel_conv/sub_144_3                13.6858      0.2   13.6858     0.0000  0.0000  sobel_conv_DW01_sub_2
+--------------------------------  ---------  -------  --------  ---------  ------  -----------------------------------------
+Total                                                 213.7882  8835.4026  0.0000
+
+1
