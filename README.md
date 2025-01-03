@@ -1,5 +1,5 @@
 # NSYSU_HDL
-CSE425 or CSE668
+CSE425 or CSE668  
 2024 - fall semester (113-1) 硬體描述語言 (Hardware Description Languages)  
 Lectured by 蕭勝夫(Shen-Fu Hsiao)   
 
@@ -23,4 +23,4 @@ Sobel edge detector with self created hardware design.
 
 ## HW5 & HW6
 An AI accelerator of VGG16.  
-HW6 is simiar to HW5, but try to add SRAM.  
+HW6 is simiar to HW5, but try to add SRAM architecture.  
